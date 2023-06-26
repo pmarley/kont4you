@@ -45,7 +45,7 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
  * ACF Options Page
  */
 if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page('Opções do tema');	
+	acf_add_options_page('Opções do tema');
 }
 
 /**
