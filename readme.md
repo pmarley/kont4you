@@ -2,21 +2,6 @@
 
 Um repositório com um template inicial para iniciar novos projetos em Wordpress.
 
-## Plugins incluidos
-
-* ACF Pro
-* All In One WP Security
-* Contact Form 7
-* Recaptcha para Contact Form 7
-* Flamingo
-* Barra de aceitação de Cookies (GDPR Cookie Consent)
-* Duplicate post
-* Post Types Order e Taxonomy Terms Order
-* Simple History
-* WEBP Converter for Media
-* WP Fastest Cache
-* WP Mail SMTP
-
 ## Tecnologias do tema
 * Sass
 * Bootstrap
@@ -45,7 +30,7 @@ ServerName exemplo.dev.com
 
 ## Instalação do template
 
-1. Clone o template e remova a pasta .git
+1. Clone o template
 
 2. Inicialize o repositório do projeto
 
@@ -55,17 +40,17 @@ ServerName exemplo.dev.com
 
 5. Importe o dump inicial do template (`_dumps/inicial.sql`) para esse banco
 
-6. Ajuste o `site_url` e a `home_url` na tabela `snts_options` inserindo a vhost criada
+6. Ajuste o `site_url` e a `home_url` na tabela `mpm_options` inserindo a vhost criada
 
 7. Configure o arquivo `/wp-config.php` usando o `/wp-config-sample.php` como base
 
 8. Renomeie a pasta do tema para o nome do projeto
 
-9. Acesse o painel admin com o user `su.wp` e a senha `554655`
+9. Acesse o painel admin com o user `user` e a senha `senhaSuperForte`
 
 10. Ative o tema, pois ele é desativado após renomear a pasta
 
-11. Crie um novo usuário para o projeto, faça login nele e delete o `su.wp`
+11. Crie um novo usuário para o projeto, faça login nele e delete o `user`
 
 12. Salve os links permanentes
 
@@ -99,7 +84,7 @@ ServerName exemplo.dev.com
 
 10. O comando para apagar o branch é: `git branch -D v0.0.1`
 
-## Atualizar o hmlproj ou produção para a tag mais nova
+## Atualizar por tag mais nova
 
 1. Conectar por ssh
 

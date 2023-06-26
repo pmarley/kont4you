@@ -45,14 +45,14 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
  * ACF Options Page
  */
 if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page('Opções do Tema');	
+	acf_add_options_page('Opções do tema');	
 }
 
 /**
  * Custom footer admin
  */
 function remove_footer_admin () {
-    echo 'Obrigado por escolher a <a href="https://santins.com.br" target="_blank">Santins</a>.</p>';
+    echo 'Obrigado por nos escolher!';
 }
 add_filter('admin_footer_text', 'remove_footer_admin');
 

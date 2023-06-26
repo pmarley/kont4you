@@ -37,17 +37,6 @@
                 </div>
             </div>
         </section>
-        <section class="faq-docs">
-            <div class="container">
-                <div class="faq-flex">
-                    <h1 class="hero-title">Ainda tem dúvidas?</h1>
-                    <div class="hero-text">Entre em contato conosco!</div><a href="https://santins.com.br/contato"
-                        target="_blank" class="faq-button w-inline-block">
-                        <div>Entrar em contato</div>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
 <?php } else {
