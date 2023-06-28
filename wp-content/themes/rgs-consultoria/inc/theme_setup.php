@@ -19,6 +19,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 function custom_navigation_menus() {
     register_nav_menus( array(
         'main_menu' => __( 'Main menu', 'wordpress-starter-template' ),
+        'footer_menu' => __( 'Footer menu', 'wordpress-starter-template' ),
     ) );
 }
 add_action( 'init', 'custom_navigation_menus' );
