@@ -1,17 +1,8 @@
-<header class="main-container-header">
+<footer class="main-container-footer">
     <div class="container">
-        <!-- logo placeholder -->
-        <div class="main-container-logo">
-            <a href="<?= BASE_URL(); ?>">
-                <img src="<?= image('logo-header.png') ?>" class="img-fluid">
-            </a>
-        </div>
-        <div class="main-container-menu">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'main_menu',
-            ]);
-            ?>
+        <div class="copy">&copy; <?php echo date('Y'); ?> - Todos os direitos reservados RGS consultoria</div>
+        <div class="main-development">
+            <p>Desenvolvido por <a href="mailto:sandromilagre@hotmail.com" target="_blank">esedesign</a></p>
         </div>
         <div class="main-container-social">
             <?php
@@ -28,10 +19,10 @@
                 $loop->the_post();
             ?>
                 <a href="<?= get_field('link')['url']; ?>" target="_blank" title="<?= the_title() ?>" class="social">
-                    <img src="<?= get_field('logo_header')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
+                    <img src="<?= get_field('logo_footer')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
                 </a>
             <?php endwhile;
             wp_reset_query(); ?>
         </div>
     </div>
-</header>
+</footer>
