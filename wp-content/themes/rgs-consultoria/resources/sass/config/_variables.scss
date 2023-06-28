@@ -1,5 +1,7 @@
 // Fonts
-$app-font-primary: arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$app-font-primary: 'Montserrat', sans-serif;
 
 $font-size-root: 1em;
 $font-size-base: 1rem;
@@ -14,9 +16,8 @@ $breakpoints: (
 );
 
 // Cores do tema
-$color-primary: #f3205c;
+$white: #F4F4F4;
+$red: #B00619;
 
-// Colors Bootstrap Overwrite example
-$theme-colors: (
-    "primary": $color-primary,
-);
+// cores das fontes
+$primary-text: #9D832B;
