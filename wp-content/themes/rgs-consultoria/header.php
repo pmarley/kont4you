@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--[if IE]><![endif]-->
 
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_site_icon_url();  ?>">
 
     <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
     <meta name="author" content="">
@@ -22,3 +22,4 @@
 
 <body <?php body_class(); ?>>
     <div id="app">
+        <?php partial('header'); ?>

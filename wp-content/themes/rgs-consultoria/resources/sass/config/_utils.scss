@@ -165,3 +165,9 @@
     font-size: $size;
     font-size: calculateRem($size);
 }
+
+.container{
+    max-width: calculateRem(1200px);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
