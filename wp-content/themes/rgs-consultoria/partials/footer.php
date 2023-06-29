@@ -18,7 +18,7 @@
             while ($loop->have_posts()) :
                 $loop->the_post();
             ?>
-                <a href="<?= get_field('link')['url']; ?>" target="_blank" title="<?= the_title() ?>" class="social">
+                <a href="<?= get_field('link')['url']; ?>" target="<?= get_field('link')['target'] ?>" title="<?= the_title() ?>" class="social">
                     <img src="<?= get_field('logo_footer')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
                 </a>
             <?php endwhile;

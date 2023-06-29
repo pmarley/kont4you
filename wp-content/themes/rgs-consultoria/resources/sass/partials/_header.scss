@@ -1,5 +1,9 @@
 .main-container-header {
     background-color: $white;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999; // tem que sobrepor tudo
+    top: 0;
 
     >div {
         display: grid;
