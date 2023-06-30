@@ -8,9 +8,8 @@
             <?php
             $args = array(
                 'post_type' => 'social_media',
-                'posts_per_page' => 4,
-                'orderby' => 'date',
-                'order' => 'DESC',
+                'posts_per_page' => 2,
+                'order' => 'ASC',
             );
 
             $loop = new WP_Query($args);
