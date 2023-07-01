@@ -2,7 +2,7 @@
 
 <main class="main-container homepage">
 	
-	
+<?php partial('contact-form')?>	
 
 </main>
 

@@ -12,7 +12,7 @@ mix.sass('resources/sass/app.scss', 'assets/css')
 });
 
 mix.browserSync({
-    proxy: 'http://rgs-consultoria.local/',
+    proxy: 'http://rgs-consultoria.local',
     files: [
         './**/*.php',
         './assets/js/*.js',
