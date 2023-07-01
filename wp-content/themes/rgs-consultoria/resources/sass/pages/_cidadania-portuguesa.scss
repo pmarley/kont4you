@@ -1,1 +1,66 @@
-.container-cidadania-portuguesa
+.container-cidadania-portuguesa {
+  .banner {
+    width: 100vw;
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+ 
+  .session {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    
+
+    .left,
+    .right {
+      flex: 1;
+      text-align: center;
+
+      h2 {
+        font-size: 16px;
+        color: #000000;
+        text-align: start;
+        font-weight: 800;
+      }
+
+      p {
+        font-size: 14px;
+        color: #999999;
+        text-align: start;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 1em;
+        text-align: start;
+        
+        li:before {
+          content: "●";
+          color: #999999;
+          display: inline-block;
+          width: 1em;
+          font-size: 14px;
+          margin-left: -1em;
+        }
+        
+      }
+      .text-importante{
+        color: #000000;
+        font-weight: 800;
+      }
+    }
+
+    .vertical-line {
+      width: 1.3px;
+      height: 30rem;
+      background-color: #b00619;
+      margin: 0 20px;
+      align-self: flex-start; /* Adiciona essa propriedade para alinhar a linha à parte superior */
+    }
+  }
+}
