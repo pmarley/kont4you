@@ -1,39 +1,185 @@
 .main-container-form {
-    background-color: $brown_200;
-    max-height: 47rem;
+  background-color: $brown_200;
 
-    > div {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+  >div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-        .container-form {
-            .title-form {
-                color: $primary-text;
-                font-size: 1.5625rem;
-                font-weight: 600;
-                margin: 1rem 0;
-            }
-        }
-        .container-image {
-            position: relative;
-            display: flex;
-            justify-content: flex-end;
-            img  {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                // gradient
-                background: rgba($color: $brown_400, $alpha: 0.4);
-            }
-        }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
+
+    .container-form {
+
+      .title-form {
+        color: $primary-text;
+        font-size: 1.5625rem;
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+
+      .contact-form {
+        display: grid;
+        row-gap: 2.31rem;
+        width: calc(100% - 3.31rem);
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        >div {
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          >img {
+            position: absolute;
+            left: -8%;
+
+            @media screen and (max-width: 768px) {
+              left: -11%;
+            }
+
+            &.image-name {
+              left: -7%;
+
+              @media screen and (max-width: 768px) {
+                left: -10%;
+              }
+            }
+          }
+
+          >.ast {
+            position: absolute;
+            top: .19rem;
+            right: .37rem;
+            z-index: 1;
+            color: $red;
+          }
+
+          $border: 2px;
+
+          >.wpcf7-form-control-wrap {
+            width: 100%;
+
+            >input {
+              padding: calc(1rem - $border) calc(.81rem - $border);
+              border: none;
+              position: relative;
+              color: $primary-text;
+              border-radius: .125rem;
+              width: 100%;
+              border: solid $border transparent;
+
+
+              &:focus {
+                outline: none;
+                border: solid $border $brown_400;
+              }
+
+              &::placeholder {
+                color: $primary-text;
+                font-size: .9375rem;
+              }
+            }
+
+            >textarea {
+              border: none;
+              border-radius: .125rem;
+              width: 100%;
+              height: 8.75rem;
+
+              &:focus {
+                outline: none;
+                border: solid $border $brown_400;
+              }
+            }
+          }
+        }
+
+        .box-input-message {
+          align-items: unset !important;
+        }
+
+        .box-input-buttons {
+          display: grid;
+          grid-template-columns: 80% 20%;
+          
+          @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          >div {
+            >span {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+
+              >input[type="file"] {
+                display: none;
+              }
+            }
+
+            .label-input-file {
+              background-color: white;
+              border-radius: .125rem;
+              color: $brown_400;
+              font-size: .9375rem;
+              font-weight: 600;
+              line-height: normal;
+              cursor: pointer;
+              padding: 1rem .63rem;
+              float: right;
+            
+              &:hover {
+                background-color: $brown;
+                color: white;
+              }
+              .send-file-image{
+                margin-right: .63rem;
+                width: 1.625rem;
+                height: 1.75rem;
+              }
+            }
+          }
+
+          >input[type="submit"] {
+            color: $brown_400;
+            font-size: .9375rem;
+            font-weight: 600;
+            line-height: normal;
+            padding: 1rem 1.20rem;
+            border-radius: .125rem;
+            border: white;
+            width: fit-content;
+            margin-left: auto;
+            height: 100%;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background-color: $brown;
+              color: white;
+            }
+
+            @media screen and (max-width: 768px) {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+
+    .container-image {
+      >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
 }
