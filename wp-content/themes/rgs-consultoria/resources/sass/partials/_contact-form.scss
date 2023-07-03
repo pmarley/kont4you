@@ -33,20 +33,12 @@
           align-items: center;
           width: 100%;
 
-          >img {
+          >svg {
             position: absolute;
             left: -8%;
 
             @media screen and (max-width: 768px) {
               left: -11%;
-            }
-
-            &.image-name {
-              left: -7%;
-
-              @media screen and (max-width: 768px) {
-                left: -10%;
-              }
             }
           }
 
@@ -131,6 +123,7 @@
               cursor: pointer;
               padding: 1rem .63rem;
               float: right;
+              transition: all .3s ease-in-out;
             
               &:hover {
                 background-color: $brown;
