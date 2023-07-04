@@ -41,9 +41,62 @@ get_header();
         </div>
     </div>
 
+    <div class="arrow-down container">
+        <img src="<?php echo image("icone-flecha.svg") ?>" alt="">
+    </div>
+
+    <div class="container container-cidades">
+        <div class="por-onde-comecar">
+            <h1>Por onde começar em <span class="passos-simples">3 passos simples</span></h1>
+
+            <div class="primeiros-passos">
+                <div class="pesquisa">
+                    <div class="passoum">
+                        <div class="icone-pesquisa">
+                            <h1>1º Passo: Pesquisa </h1>
+                            <img src="<?php echo image("Pesquizar.svg") ?>" alt="">
+                        </div>
+                        <p>Reúna cópias de documentos e informações orais que nos ajudem na localização da certidão de nascimento (e casamento, se for o caso) do ascendente português. Para isto, cópia do passaporte, dos documentos de identidade, cartas de família, ou, uma cópia da própria certidão portuguesa antiga. Com informações precisas podemos pedir uma segunda via do registro de nascimento ou batismo (e casamento, se for o caso) em Portugal.</p>
+                    </div>
+
+                    <div class="passodois">
+                        <div class="icone-pesquisa">
+                            <h1>2º Passo: Organizar documentos </h1>
+                            <img src="<?php echo image("icon_documentos.svg") ?>" alt="">
+                        </div>
+                        <p>Escanei todas as certidões brasileiras de registro civil, desde o ascendente português até o Requerente, são elas: Certidões de nascimento, casamento e óbito. <span>Para avaliação do direito pretendido é importante que sejam certidões novas</span>, em <span>Inteiro Teor</span> e digitadas, já que são documentos legíveis enquanto as cópias reprográficas (exigência de Portugal) podem estar ilegíveis. Peça ao cartório cada certidão nos dois formatos: inteiro teor e reprográfica. Se precisar solicite um orçamento que nós fazemos este trabalho de reunião das certidões brasileiras.
+                            <br>
+                            <br>
+                            O foco dos documentos a serem reunidos refere-se apenas a linhagem portuguesa, não é necessário juntar documentos dos cônjuges.
+                        </p>
+                    </div>
+                    <div class="passotres">
+                        <div class="icone-pesquisa">
+                            <h1>2º 3º Passo: Monte sua Árvore Genealógica </h1>
+                            <img src="<?php echo image("icon-arvore.svg") ?>" alt="">
+                        </div>
+                        <p>Reunida a documentação, preencha a árvore genealógica com muita atenção e escrevendo os nomes e sobrenomes completos de acordo com os documentos, nos envie para análise e aguarde ser respondido.
+                            <br>
+                            <br>
+                            <span>ATENÇÃO:</span> É muito importante que a documentação seja enviada junto com sua árvore genealógica preenchida, isso facilita nossa avaliação para agilizar o devido processo.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="img-lisboa">
+                    <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
+                </div>
+            </div>
+
+            <div class="arrow-down container">
+                <img src="<?php echo image("icon_direção.svg") ?>" alt="">
+            </div>
+        </div>
+    </div>
 
 
 
+    <?php partial('contact-form') ?>
 </section>
 
 <?php
