@@ -1,14 +1,81 @@
 .container-cidadania-portuguesa {
   .banner {
-    width: 100vw;
-
+    @media (max-width: 768px) {
+      max-width: 768px;
+      margin-top: 97px;
+    }
+    position: relative;
+    max-width: 100vw;
+  
     img {
       max-width: 100%;
       object-fit: contain;
       height: auto;
     }
-  }
+  
+    .rectangle {
+      position: absolute;
+      border: 1px solid $white;
+      top: 50%;
+      left: 62%;
+      margin-top: 3rem;
+      transform: translate(-50%, -50%);
+      height: 75%;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
+      @media (max-width: 768px) {
+        top: 26%;
+        left: 64%;   
+      }
+    }
+  
+    .glass-effect {
+      position: relative;
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2); /* Cor da máscara escura */
+        border-radius: inherit;
+      }
+  
+      img {
+        z-index: 999;
+        @media (max-width: 768px) {
+          max-width: 60%;
+        }
+      }
+  
+      p {
+        font-size: 23px;
+        font-weight: 600;
+        color: $white;
+        z-index: 999;
+        @media (max-width: 768px) {
+         font-size: 12px; 
+         text-align: center;
+        }
+      }
+    }
+  }
+  
+  
+  
   .session {
     display: flex;
     align-items: center;
@@ -86,10 +153,10 @@
 
   .container-cidades {
     padding-top: 0.5rem;
-  
+
     .por-onde-comecar {
       background-color: $gray;
-  
+
       h1 {
         color: $text;
         font-size: 20px;
@@ -97,17 +164,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-  
+
         span {
           color: $black !important;
         }
       }
-  
+
       .primeiros-passos {
         display: flex;
         align-items: center;
         justify-content: center;
-  
+
         .pesquisa {
           .passoum,
           .passodois,
@@ -123,14 +190,14 @@
                 padding-top: 1rem;
               }
             }
-  
+
             p {
               width: 566px;
               color: $text;
               text-align: start;
               font-size: 14px;
               font-weight: 400;
-  
+
               span {
                 color: $black;
                 font-weight: 800;
@@ -138,15 +205,22 @@
             }
           }
         }
-  
+
         .img-lisboa {
-          img {
-            width: 576px;
-            height: 550px;
+          position: relative;
+
+          img:first-child {
+            position: absolute;
+            top: -13px;
+            left: 13px;
+            @media (max-width: 768px) {
+              top: -8px !important;
+              left: 8px !important;
+            }
           }
         }
       }
-  
+
       .arrow-down {
         display: flex;
         justify-content: center;
@@ -155,13 +229,17 @@
         color: $brown_400;
       }
     }
-  
-    // Responsividade para celular e tablet
-    @media only screen and (max-width: 768px) {
+
+    @media (max-width: 768px) {
       .por-onde-comecar {
+        h1 {
+          flex-direction: column;
+          padding-top: 1rem;
+        }
         .primeiros-passos {
           flex-direction: column;
-  
+          padding-bottom: 1rem;
+
           .pesquisa {
             .passoum,
             .passodois,
@@ -172,28 +250,29 @@
                 h1 {
                   text-align: center;
                 }
-  
+
                 img {
                   margin-bottom: 1rem;
                 }
               }
-  
+
               p {
                 width: 100%;
                 text-align: center;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
               }
             }
           }
-        }
-  
-        .img-lisboa {
-          img {
-            width: 100%;
-            height: auto;
+          .img-lisboa {
+            img {
+              width: 100%;
+              height: auto;
+            }
           }
         }
       }
     }
   }
-  
 }

@@ -7,6 +7,12 @@ get_header();
 
 <section class="container-cidadania-portuguesa">
     <div class="banner">
+        <div class="rectangle">
+            <div class="glass-effect">
+                <img src="<?php echo image("icon_cidadania portuguesa.svg") ?>" alt="">
+                <p>Cidadania Portuguesa</p>
+            </div>
+        </div>
         <img src="<?php echo image("BannerbandeiraPortugal.png") ?>" alt="">
         <img src="<?php echo image("Rectanglebege.png") ?>" alt="">
     </div>
@@ -72,7 +78,7 @@ get_header();
                     </div>
                     <div class="passotres">
                         <div class="icone-pesquisa">
-                            <h1>2º 3º Passo: Monte sua Árvore Genealógica </h1>
+                            <h1>3º Passo: Monte sua Árvore Genealógica </h1>
                             <img src="<?php echo image("icon-arvore.svg") ?>" alt="">
                         </div>
                         <p>Reunida a documentação, preencha a árvore genealógica com muita atenção e escrevendo os nomes e sobrenomes completos de acordo com os documentos, nos envie para análise e aguarde ser respondido.
@@ -84,6 +90,7 @@ get_header();
                     </div>
                 </div>
                 <div class="img-lisboa">
+                    <img class="" src="<?php echo image("foto-Lisboa.png") ?>" alt="">
                     <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
                 </div>
             </div>
