@@ -13,7 +13,7 @@
       background-color: #EEE1D0;
       position: absolute;
       top: 0;
-      left: -88.8%;
+      left: -88%;
 
       @media screen and (max-width: 1024px) {
         display: none;
@@ -82,6 +82,7 @@
           top: 100%;
           left: 6%;
           position: absolute;
+          animation-delay: 1s;
           animation: leftToRight 1s ease-in-out;
         }
 
