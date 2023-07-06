@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main class="main-container homepage">
-	
-<?php partial('contact-form')?>	
+
+  <?php partial('contact-form') ?>
 
 </main>
 
