@@ -22,6 +22,7 @@
         display: grid;
         row-gap: 2.31rem;
         width: calc(100% - 3.31rem);
+        justify-content: center;
 
         @media screen and (max-width: 768px) {
           width: 100%;
@@ -96,7 +97,7 @@
 
         .box-input-buttons {
           display: grid;
-          grid-template-columns: 80% 20%;
+          grid-template-columns: 70% 30%;
           
           @media screen and (max-width: 768px) {
             grid-template-columns: 1fr 1fr;
