@@ -63,7 +63,7 @@
       }
   
       p {
-        font-size: 23px;
+        font-size: calculateRem(20px);
         font-weight: 600;
         color: $white;
         z-index: 999;
@@ -167,6 +167,7 @@
         align-items: center;
 
         span {
+          margin-left: calculateRem(8px);
           color: $black !important;
         }
       }
@@ -186,22 +187,21 @@
               padding-bottom: 1rem;
               h1 {
                 color: $text;
-                font-size: 16px;
+                font-size: calculateRem(16px);
                 font-weight: 600;
                 padding-top: 1rem;
               }
             }
 
             p {
-              width: 566px;
               color: $text;
+              width: calculateRem(566px);
               text-align: start;
-              font-size: 14px;
+              font-size: calculateRem(14px);
               font-weight: 400;
 
               span {
                 color: $black;
-                font-weight: 800;
               }
             }
           }
@@ -212,11 +212,11 @@
 
           img:first-child {
             position: absolute;
-            top: -13px;
-            left: 13px;
+            top: calculateRem(-13px);
+            left: calculateRem(13px);
             @media (max-width: 768px) {
-              top: -8px !important;
-              left: 8px !important;
+              top: calculateRem(-8px) !important;
+              left: calculateRem(8px) !important;
             }
           }
         }
