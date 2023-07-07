@@ -95,7 +95,6 @@ get_header();
           <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
         </div>
       </div>
-
       <div class="arrow-down container">
         <a href="#contact-form">
           <img src="<?php echo image("icon_direção.svg") ?>" alt="">
@@ -103,9 +102,6 @@ get_header();
       </div>
     </div>
   </div>
-
-
-
   <?php partial('contact-form') ?>
 </section>
 
