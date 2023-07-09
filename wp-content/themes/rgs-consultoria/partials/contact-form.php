@@ -1,4 +1,4 @@
-<section class="main-container-form">
+<section id="contact-form" class="main-container-form">
   <div class="container">
     <div class="container-form">
       <h3 class="title-form">Contato</h3>
