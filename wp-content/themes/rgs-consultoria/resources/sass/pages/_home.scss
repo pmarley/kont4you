@@ -1,6 +1,6 @@
 .homepage {
   margin-top: calculateRem(97px);
-
+  // hero
   .main-container-hero {
     position: relative;
     display: flex;
@@ -54,7 +54,10 @@
       height: 100%;
 
       @media screen and (max-width: 768px) {
-        grid-template-columns: 75%;
+        grid-template-columns: 50%;
+        padding: 0;
+        margin: 0;
+        left: 0;
 
         .column {
           display: none;
@@ -119,16 +122,84 @@
           color: $red;
           background-color: white;
           border: solid 2px white;
-          border-radius: 0;
+          border-radius: 2px;
           transition: all 0.3s ease-in-out;
 
           &:hover {
             color: white;
-            background-color: $red;
-            border: solid 2px $red;
+            background-color: #b0061aef;
+            border: solid 2px white;
           }
         }
       }
     }
   }
+
+  // About us
+  .main-container-about-us {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container-about-us-content{
+      color: $text;
+      padding: calculateRem(52px) 1rem;
+      width: 95%;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .title {
+        margin-bottom: calculateRem(24px);
+        font-size: calculateRem(25px);
+        font-weight: 600;
+      }
+      p {
+        font-size: calculateRem(16px);
+        font-weight: 400;
+        line-height: 148.4%;
+        font-style: normal;
+      }
+      .container-arrow {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: calculateRem(30px);
+      }
+    }
+
+    .main-container-brand{
+      background-color: $text;
+      display: grid;
+      place-items: center;
+      padding: calculateRem(50px) 0;
+
+      > a {
+        color: $text;
+        background-color: white;
+        padding:calculateRem(7px) calculateRem(18px);
+        font-size: calculateRem(16px);
+        font-weight: 600;
+        border-radius: calculateRem(2px);
+        text-decoration: none;
+        border: solid 2px white;
+        transition: all 0.3s ease-in-out;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 4rem;
+        }
+
+        &:hover {
+          color: white;
+          background-color: $text;
+          border: solid 2px white;
+        }
+      }
+    }
+  }
+
 }
