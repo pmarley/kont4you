@@ -13,7 +13,7 @@
       background-color: #EEE1D0;
       position: absolute;
       top: 0;
-      left: -88%;
+      left: -86.5%;
 
       @media screen and (max-width: 1024px) {
         display: none;
@@ -76,13 +76,12 @@
           content: '';
           width: 0;
           height: 0;
-          border-left: 25px solid transparent;
-          border-right: 25px solid transparent;
-          border-top: 25px solid #b0061aef;
+          border-left: calculateRem(15px) solid transparent;
+          border-right: calculateRem(15px) solid transparent;
+          border-top: calculateRem(15px) solid #b0061aef;
           top: 100%;
           left: 6%;
           position: absolute;
-          animation-delay: 1s;
           animation: leftToRight 1s ease-in-out;
         }
 
