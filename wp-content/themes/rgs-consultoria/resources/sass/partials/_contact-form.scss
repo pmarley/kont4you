@@ -34,12 +34,16 @@
           align-items: center;
           width: 100%;
 
+          @media screen and (max-width: 768px) {
+            justify-content: flex-end;
+          }
+
           >svg {
             position: absolute;
             left: -8%;
 
             @media screen and (max-width: 768px) {
-              left: -11%;
+              left: 6%;
             }
           }
 
@@ -55,6 +59,10 @@
 
           >.wpcf7-form-control-wrap {
             width: 100%;
+
+            @media screen and (max-width: 768px) {
+              width: 80%;
+            }
 
             >input {
               padding: calc(1rem - $border) calc(.81rem - $border);

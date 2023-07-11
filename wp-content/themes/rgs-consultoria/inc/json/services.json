@@ -1,0 +1,32 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "title": "Cidadania Italiana",
+            "description": "A cidadania se transmite a partir de 17 de março de 1861, ano em que se constituiu o Reino da Itália. Nos casos em que o (a) ascendente italiano (a) tenha nascido...",
+            "icon": "icon_cidadania italiana.svg",
+            "link": "cidadania-italiana"
+        },
+        {
+            "id": 2,
+            "title": "Cidadania Portuguesa",
+            "description": "A Cidadania Portuguesa é um direito transmitido por sangue (iure sanguinis), porém, existem outras formas de reconhecimento, assim como a nat...",
+            "icon": "icon_cidadania portuguesa.svg",
+            "link": "cidadania-portuguesa"
+        },
+        {
+            "id": 3,
+            "title": "Homologação de Decisão Estrangeira",
+            "description": "A Constituição Federal estabelece que a homologação de sentenças ou decisões estrangeiras é de competência do Superior Tribunal...",
+            "icon": "icon_justiça.svg",
+            "link": "estrangeira"
+        },
+        {
+            "id": 4,
+            "title": "Direito de Família",
+            "description": "Os casos mais comuns são assessoria para execução de alimentos e indenizações quando uma das partes ou o bem se encontre no estrangeiro...",
+            "icon": "icon_família.svg",
+            "link": "familia"
+        }
+    ]
+}
