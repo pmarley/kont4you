@@ -13,7 +13,7 @@
         </div>
     </section>
 
-    <section class="container main-container-about-us">
+    <section id="about-us" class="container main-container-about-us">
         <div class="main-container-about-us-content">
             <h2 class="title">Sobre nós</h2>
             <p>Fundada em 2004, a RGS consultoria é uma empresa que presta serviços na área de direito internacional com
