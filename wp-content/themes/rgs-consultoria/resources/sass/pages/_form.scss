@@ -1,0 +1,54 @@
+.main-container-gen-form {
+    .main-container-banner-hero-gen-form {
+        display: grid;
+        place-items: center;
+        padding-top: calculateRem(206px);
+        background-color: #C5C0A0;
+        margin-top: calculateRem(97px);
+
+        .graph {
+            object-fit: contain;
+            width: calculateRem(300px);
+            height: auto;
+            padding-bottom: calculateRem(79px);
+        }
+
+        .arrow {
+            object-fit: contain;
+            max-width: calculateRem(28px);
+            height: auto;
+            margin-bottom: calculateRem(75px);
+        }
+    }
+
+    .main-container-icon-gen-form {
+        display: grid;
+        place-items: center;
+        padding: calculateRem(16px) 0;
+        background-color: $brown_400;
+
+        img {
+            object-fit: contain;
+            width: calculateRem(76px);
+            height: auto;
+        }
+    }
+
+    .main-container-form {
+        background-color: white;
+        > div {
+            background-color: whitesmoke;
+            #wpcf7-f103-o1 {
+            > form {
+                    > div {
+                        > span {
+                            > input {
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
