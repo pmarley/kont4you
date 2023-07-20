@@ -194,7 +194,10 @@
         position: absolute;
         bottom: 1rem;
         right: 1rem;
-        rotate: 180deg;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
