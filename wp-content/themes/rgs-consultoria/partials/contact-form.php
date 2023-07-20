@@ -6,6 +6,9 @@
     </div>
     <div class="container-image">
       <img src="<?= image('contact-form-image.png'); ?>" alt="contact-form">
+      <a href="#">
+        <img src="<?= image('icon_arrow_up.svg'); ?>">
+      </a>
     </div>
   </div>
 </section>
