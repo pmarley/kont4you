@@ -61,13 +61,13 @@
 			if( pdf_value ){ 
 				setTimeout(function(){ 
 					if ($(".wpcf7").hasClass("wpcf7-mail-sent-ok")) {
-						// $('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>Este é meu titulo</a>' );	    
+						$('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>Este é meu titulo</a>' );	    
 						window.open(pdf_value, '_blank');
 						setCookie("pdf_path", '');
 					}
 					else
 					{
-						// $('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>'+pdf_download_link_txt+'</a>' );	    
+						$('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>'+pdf_download_link_txt+'</a>' );	    
 						window.open(pdf_value, '_blank');
 						setCookie("pdf_path", '');
 					}

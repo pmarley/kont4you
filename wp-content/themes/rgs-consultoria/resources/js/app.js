@@ -9,12 +9,14 @@ import 'bootstrap';
 
 import formMask from './partials/form-mask';
 import menu from './partials/menu';
+import form from './partials/form';
 
 ($ => {
   $(() => {
     // Jquery Functions
     menu();
     formMask();
+    form();
   });
 })(jQuery);
 
