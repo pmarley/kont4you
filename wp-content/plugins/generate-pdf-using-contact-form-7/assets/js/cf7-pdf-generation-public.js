@@ -67,9 +67,7 @@
 					}
 					else
 					{
-						$('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>'+pdf_download_link_txt+'</a>' );	    
-						window.open(pdf_value, '_blank');
-						setCookie("pdf_path", '');
+						$('#'+unit_tag+' .wpcf7-response-output').append( '<br><a class="download-lnk-pdf" href="'+pdf_value+'" target="_blank" download>'+pdf_download_link_txt+'</a>' );
 					}
 	
 				}, 250);
