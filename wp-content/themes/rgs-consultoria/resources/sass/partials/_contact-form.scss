@@ -90,6 +90,10 @@
               border-radius: .125rem;
               width: 100%;
               height: 8.75rem;
+              padding: calc(1rem - $border) calc(.81rem - $border);
+              color: $primary-text;
+              font-size: .9375rem;
+
 
               &:focus {
                 outline: none;
@@ -129,12 +133,13 @@
               padding: 1rem .63rem;
               float: right;
               transition: all .3s ease-in-out;
-            
+
               &:hover {
                 background-color: $brown;
                 color: white;
               }
-              .send-file-image{
+
+              .send-file-image {
                 margin-right: .63rem;
                 width: 1.625rem;
                 height: 1.75rem;
@@ -172,7 +177,15 @@
               width: 80%;
               padding: .5rem .5rem;
             }
+
+            svg {
+              margin-left: calculateRem(10px);
+            }
           }
+
+          // .wpcf7-not-valid-tip {
+          //   display: none !important;
+          // }
         }
       }
     }
@@ -190,10 +203,10 @@
         }
       }
 
-      > a {
+      >a {
         position: absolute;
-        bottom: 1rem;
-        right: 1rem;
+        bottom: calculateRem(39px);
+        right: calculateRem(4px);
 
         @media screen and (max-width: 768px) {
           display: none;
@@ -201,4 +214,36 @@
       }
     }
   }
+
+  .wpcf7-response-output {
+    background: white;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text;
+    font-size: calculateRem(12px);
+    font-weight: 600;
+    padding: calculateRem(16px) !important;
+    width: fit-content;
+    float: right;
+    margin-right: 5.31rem !important;
+  }
+
+  .check-icon {
+    &::before {
+      content: '';
+      background-image: $check_icon;
+      width: calculateRem(30px);
+      height: calculateRem(30px);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: calculateRem(16px);
+    }
+  }
+
+  // .wpcf7-not-valid-tip {
+  //   display: none;
+  // }
 }
