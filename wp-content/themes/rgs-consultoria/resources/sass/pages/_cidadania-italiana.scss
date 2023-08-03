@@ -266,6 +266,28 @@
               width: 100%;
               height: auto;
             }
+
+            .assemble-family-tree {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              column-gap: 4rem;
+
+              img {
+                margin: 0 !important;
+                position: static !important;
+              }
+              a {
+                color: $white;
+                background-color: $brown_400;
+                padding: 6px;
+                border: none;
+                border-radius: 5px;
+                text-decoration: none;
+                font-size: calculateRem(16px);
+                text-align: center;
+              }
+            }
           }
         }
       }

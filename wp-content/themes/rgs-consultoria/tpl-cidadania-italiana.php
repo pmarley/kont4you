@@ -136,6 +136,11 @@ get_header();
         <div class="img-lisboa">
           <img class="" src="<?php echo image("fotoToscanaItália1.png") ?>" alt="">
           <img src="<?php echo image("Rectanglebage28.png") ?>" alt="">
+          <div class="pt-3 assemble-family-tree">
+            <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
+            <a href="">Montar minha árvore genealógica</a>
+            <img src="<?php echo image("botão_home.png") ?>" alt="">
+          </div>
         </div>
       </div>
       <div class="arrow-down container">
