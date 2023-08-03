@@ -1,0 +1,59 @@
+.main-container-footer {
+    background-color: $brown;
+    padding: 2rem 0 2.5rem 0;
+
+    >div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            row-gap: 1.5rem;
+        }
+
+        .copy {
+            font-size: 0.75rem;
+            color: #FFF;
+            margin: 0;
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        .main-development {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+
+            p,
+            p>a {
+                font-size: 0.75rem;
+                color: #FFF;
+                margin: 0;
+            }
+        }
+
+        .main-container-social {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 1.31rem;
+
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
+
+            a {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
+
+    }
+}
