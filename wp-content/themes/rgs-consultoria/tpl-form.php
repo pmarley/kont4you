@@ -35,6 +35,8 @@ get_header();
         </div>
     </section>
 </main>
+
+<?php partial('modal-send-form') ?>
 <?php partial('contact-form') ?>
 
 <?php get_footer(); ?>

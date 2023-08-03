@@ -18,4 +18,21 @@ export default function () {
       }
     }, 2000)
   })
+
+  $('#download-lnk-click-pdf').on('click', async () => {
+    setTimeout((e) => {
+      const form = $('.wpcf7-form')
+      const containerModal = $('.main-container-modal')
+      const closeModal = $('.close-modal')
+
+      if (form.hasClass('sent')) {
+        closeModal.on('click', () => {
+          containerModal.removeClass('active')
+        })
+        containerModal.addClass('active')
+        window.scrollTo(0,0)
+      }
+      
+    }, 2000)
+  })
 }
