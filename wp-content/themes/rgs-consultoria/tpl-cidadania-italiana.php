@@ -134,12 +134,26 @@ get_header();
           </div>
         </div>
         <div class="img-lisboa">
-          <img class="" src="<?php echo image("fotoToscanaItália1.png") ?>" alt="">
-          <img src="<?php echo image("Rectanglebage28.png") ?>" alt="">
-          <div class="pt-3 assemble-family-tree">
-            <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
-            <a href="">Montar minha árvore genealógica</a>
-            <img src="<?php echo image("botão_home.png") ?>" alt="">
+          <div class="container-img-lisboa">
+            <img class="" src="<?php echo image("fotoToscanaItália1.png") ?>" alt="">
+            <img src="<?php echo image("Rectanglebage28.png") ?>" alt="">
+          </div>
+          <div class="container-cidadaniareconhecida">
+            <div class="cidadaniareconhecida">
+              <p><span>b) Cidadania reconhecida diretamente na Itália</span>
+                <br>
+                <br>
+                A Cidadania reconhecida na Itália é retirada de forma imediata e sem agendamento prévio, como exige o Brasil.
+                <br>
+                <br>
+                Nosso escritório cuida da preparação e organização de toda a documentação e conta com uma rede de assessores e advogados que acompanharão o Requerente durante todo percurso em que este estiver na Itália, inclusive promovendo sua hospedagem.
+              </p>
+            </div>
+            <div class="pt-3 assemble-family-tree">
+              <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
+              <a href="">Montar minha árvore genealógica</a>
+              <img src="<?php echo image("botão_home.png") ?>" alt="">
+            </div>
           </div>
         </div>
       </div>
