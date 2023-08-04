@@ -233,7 +233,7 @@
   .check-icon {
     &::before {
       content: '';
-      background-image: $check_icon;
+      background-image: var(--check-icon);
       width: calculateRem(30px);
       height: calculateRem(30px);
       background-size: contain;

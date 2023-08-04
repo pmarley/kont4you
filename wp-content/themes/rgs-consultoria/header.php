@@ -18,6 +18,12 @@
     <meta property="og:image" content="<?php echo image('share.jpg'); ?>">
 
     <?php wp_head(); ?>
+
+    <style>
+        :root {
+            --check-icon: url(<?php echo image('checked.svg'); ?>);
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
