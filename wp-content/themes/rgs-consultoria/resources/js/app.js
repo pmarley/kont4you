@@ -10,6 +10,7 @@ import 'bootstrap';
 import formMask from './partials/form-mask';
 import menu from './partials/menu';
 import form from './partials/form';
+import dynamicForm from './partials/dynamic-form';
 
 ($ => {
   $(() => {
@@ -17,6 +18,7 @@ import form from './partials/form';
     menu();
     formMask();
     form();
+    dynamicForm();
   });
 })(jQuery);
 
