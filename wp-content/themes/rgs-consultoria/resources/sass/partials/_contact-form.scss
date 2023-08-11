@@ -16,6 +16,7 @@
         font-size: 1.5625rem;
         font-weight: 600;
         margin: 1rem 0;
+        padding-left: 2.6rem;
       }
 
       .contact-form {
@@ -40,7 +41,7 @@
 
           >svg {
             position: absolute;
-            left: -8%;
+            left: -10% !important;
 
             @media screen and (max-width: 768px) {
               left: 6%;
@@ -130,9 +131,13 @@
               font-weight: 600;
               line-height: normal;
               cursor: pointer;
-              padding: 1rem .63rem;
               float: right;
               transition: all .3s ease-in-out;
+              padding: 0 10px 0 13px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
 
               &:hover {
                 background-color: $brown;
@@ -160,13 +165,15 @@
             font-size: .9375rem;
             font-weight: 600;
             line-height: normal;
-            padding: 1rem 1.20rem;
             border-radius: .125rem;
             border: white;
-            width: fit-content;
             margin-left: auto;
-            height: 100%;
             transition: all .3s ease-in-out;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            display: grid;
+            place-items: center;
 
             &:hover {
               background-color: $brown;
