@@ -7,9 +7,13 @@
 
     >div {
         display: grid;
-        grid-template-columns: 50% 35% 15%;
+        grid-template-columns: 61% 25% 13%;
         align-items: center;
         padding: 1.5rem 1rem;
+
+        @media screen and (max-width: 1024px) {
+          grid-template-columns: 55% 32% 13%;;
+        }
 
         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr 1fr;
@@ -17,8 +21,11 @@
         }
 
         .main-container-logo {
-            width: 100%;
-            height: auto;
+            img {
+                width: 16.31988rem;
+                height: 3.25rem;
+                flex-shrink: 0;
+            }
         }
 
         >.main-container-mobile-menu {
@@ -94,7 +101,6 @@
                                 color: $brown_400;
                                 font-size: 1rem;
                                 line-height: normal;
-                                text-transform: uppercase;
                                 transition: all 0.3s ease-in-out;
                                 display: flex;
                                 align-items: center;
@@ -196,7 +202,6 @@
                             font-size: 0.75rem;
                             font-weight: 600;
                             line-height: normal;
-                            text-transform: uppercase;
                             transition: all 0.3s ease-in-out;
 
                             &:hover {
