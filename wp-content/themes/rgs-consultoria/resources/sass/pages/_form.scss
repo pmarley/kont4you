@@ -93,6 +93,13 @@
             }
           }
 
+          .box-born-before,
+          .box-grandfather-before,
+          .box-great-grandfather-before,
+          .box-tetravo{
+            display: none;
+          }
+
           > div,
           div div {
             display: grid;

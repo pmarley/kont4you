@@ -23,11 +23,13 @@ export default function () {
             $('[name="your-parent-married-name"]').attr('placeholder', 'Nome do cônjuge do PAI')
             $('.label-parent-married').text('O PAI é casado?')
             $('.box-italian > label > .patern').text('Assinale se seu PAI é ')
+            $('.box-born-before').hide()
         } else {
             $('[name="your-parent-name"]').attr('placeholder', 'Nome da MÃE')
             $('[name="your-parent-married-name"]').attr('placeholder', 'Nome do cônjuge da MÃE')
             $('.label-parent-married').text('A MÃE é casada?')
             $('.box-italian > label > .patern').text('Assinale se sua MÃE é ')
+            $('.box-born-before').show()
         }
     })
 
@@ -39,11 +41,13 @@ export default function () {
             $('[name="your-grandfather-married-name"]').attr('placeholder', 'Nome do cônjuge do AVÔ')
             $('.label-grandfather-married').text('Seu AVÔ é casado?')
             $('.box-italian > label > .grandfather').text('Assinale se seu AVÔ é ')
+            $('.box-grandfather-before').hide()
         } else {
             $('[name="your-grandfather-name"]').attr('placeholder', 'Nome da AVÓ')
             $('[name="your-grandfather-married-name"]').attr('placeholder', 'Nome do cônjuge da AVÓ')
             $('.label-grandfather-married').text('Sua AVÓ é casada?')
             $('.box-italian > label > .grandfather').text('Assinale se sua AVÓ é ')
+            $('.box-grandfather-before').show()
         }
     })
 
@@ -55,11 +59,13 @@ export default function () {
             $('[name="your-great-grandfather-married-name"]').attr('placeholder', 'Nome do cônjuge do BISAVÔ')
             $('.label-great-grandfather-married').text('Seu BISAVÔ é casado?')
             $('.box-italian > label > .great-grandfather').text('Assinale se seu BISAVÔ é ')
+            $('.box-great-grandfather-before').hide()
         } else {
             $('[name="your-great-grandfather-name"]').attr('placeholder', 'Nome da BISAVÓ')
             $('[name="your-great-grandfather-married-name"]').attr('placeholder', 'Nome do cônjuge da BISAVÓ')
             $('.label-great-grandfather-married').text('Sua BISAVÓ é casada?')
             $('.box-italian > label > .great-grandfather').text('Assinale se sua BISAVÓ é ')
+            $('.box-great-grandfather-before').show()
         }
     })
 
@@ -71,11 +77,15 @@ export default function () {
             $('[name="your-tetravo-conjuge-nome"]').attr('placeholder', 'Nome do cônjuge do TETRAVÔ')
             $('.label-tetravo-married').text('Seu TETRAVÔ é casado?')
             $('.box-italian > label > .tetravo').text('Assinale se seu TETRAVÔ é ')
+            $('.box-tetravo').hide()
         } else {
             $('[name="your-tetravo-name"]').attr('placeholder', 'Nome do TETRAVÓ')
             $('[name="your-tetravo-conjuge-nome"]').attr('placeholder', 'Nome do cônjuge do TETRAVÓ')
             $('.label-tetravo-married').text('Seu TETRAVÓ é casado?')
             $('.box-italian > label > .tetravo').text('Assinale se seu TETRAVÓ é ')
+            $('.box-tetravo').show()
         }
     })
+
+
 }
