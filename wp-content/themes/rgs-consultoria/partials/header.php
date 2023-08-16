@@ -3,7 +3,7 @@
         <!-- logo placeholder -->
         <div class="main-container-logo">
             <a href="<?= BASE_URL(); ?>">
-                <img src="<?= image('logo.svg') ?>" class="img-fluid">
+                <img src="<?= image('logo.png') ?>" class="">
             </a>
         </div>
         <div class="main-container-mobile-menu menu">

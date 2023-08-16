@@ -17,6 +17,14 @@
         font-weight: 600;
         margin: 1rem 0;
         padding-left: 2.6rem;
+
+        @media screen and (max-width: 768px) {
+          padding-left: 7.6rem;
+        }
+
+        @media screen and (max-width:  425px) {
+          padding: 0 !important;
+        }
       }
 
       .contact-form {
@@ -62,7 +70,7 @@
             width: 100%;
 
             @media screen and (max-width: 768px) {
-              width: 80%;
+              width: 100%;
             }
 
             >input {
@@ -148,10 +156,6 @@
                 margin-right: .63rem;
                 width: 1.625rem;
                 height: 1.75rem;
-
-                @media screen and (max-width: 768px) {
-                  display: none;
-                }
               }
 
               @media screen and (max-width: 768px) {

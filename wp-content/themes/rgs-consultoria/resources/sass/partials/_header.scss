@@ -25,6 +25,11 @@
                 width: 16.31988rem;
                 height: 3.25rem;
                 flex-shrink: 0;
+                object-fit: contain;
+
+                @media screen and (max-width: 768px) {
+                    width: 10rem;
+                }
             }
         }
 
