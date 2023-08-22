@@ -16,12 +16,14 @@
         font-size: 1.5625rem;
         font-weight: 600;
         margin: 1rem 0;
+        padding-left: 2.6rem;
       }
 
       .contact-form {
         display: grid;
         row-gap: 2.31rem;
         width: calc(100% - 3.31rem);
+        justify-content: center;
 
         @media screen and (max-width: 768px) {
           width: 100%;
@@ -33,12 +35,16 @@
           align-items: center;
           width: 100%;
 
+          @media screen and (max-width: 768px) {
+            justify-content: flex-end;
+          }
+
           >svg {
             position: absolute;
-            left: -8%;
+            left: -10% !important;
 
             @media screen and (max-width: 768px) {
-              left: -11%;
+              left: 6%;
             }
           }
 
@@ -54,6 +60,10 @@
 
           >.wpcf7-form-control-wrap {
             width: 100%;
+
+            @media screen and (max-width: 768px) {
+              width: 80%;
+            }
 
             >input {
               padding: calc(1rem - $border) calc(.81rem - $border);
@@ -81,6 +91,10 @@
               border-radius: .125rem;
               width: 100%;
               height: 8.75rem;
+              padding: calc(1rem - $border) calc(.81rem - $border);
+              color: $primary-text;
+              font-size: .9375rem;
+
 
               &:focus {
                 outline: none;
@@ -96,11 +110,7 @@
 
         .box-input-buttons {
           display: grid;
-          grid-template-columns: 80% 20%;
-          
-          @media screen and (max-width: 768px) {
-            grid-template-columns: 1fr 1fr;
-          }
+          grid-template-columns: 70% 30%;
 
           >div {
             >span {
@@ -121,18 +131,31 @@
               font-weight: 600;
               line-height: normal;
               cursor: pointer;
-              padding: 1rem .63rem;
               float: right;
               transition: all .3s ease-in-out;
-            
+              padding: 0 10px 0 13px;
+              height: 50px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
               &:hover {
                 background-color: $brown;
                 color: white;
               }
-              .send-file-image{
+
+              .send-file-image {
                 margin-right: .63rem;
                 width: 1.625rem;
                 height: 1.75rem;
+
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+
+              @media screen and (max-width: 768px) {
+                padding: .5rem .5rem;
               }
             }
           }
@@ -142,13 +165,15 @@
             font-size: .9375rem;
             font-weight: 600;
             line-height: normal;
-            padding: 1rem 1.20rem;
             border-radius: .125rem;
             border: white;
-            width: fit-content;
             margin-left: auto;
-            height: 100%;
             transition: all .3s ease-in-out;
+            width: 100px;
+            height: 50px;
+            background-color: white;
+            display: grid;
+            place-items: center;
 
             &:hover {
               background-color: $brown;
@@ -157,13 +182,24 @@
 
             @media screen and (max-width: 768px) {
               width: 80%;
+              padding: .5rem .5rem;
+            }
+
+            svg {
+              margin-left: calculateRem(10px);
             }
           }
+
+          // .wpcf7-not-valid-tip {
+          //   display: none !important;
+          // }
         }
       }
     }
 
     .container-image {
+      position: relative;
+
       >img {
         width: 100%;
         height: 100%;
@@ -173,6 +209,48 @@
           display: none;
         }
       }
+
+      >a {
+        position: absolute;
+        bottom: calculateRem(39px);
+        right: calculateRem(4px);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
     }
   }
+
+  .wpcf7-response-output {
+    background: white;
+    border: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text;
+    font-size: calculateRem(12px);
+    font-weight: 600;
+    padding: calculateRem(16px) !important;
+    width: fit-content;
+    float: right;
+    margin-right: 5.31rem !important;
+  }
+
+  .check-icon {
+    &::before {
+      content: '';
+      background-image: var(--check-icon);
+      width: calculateRem(30px);
+      height: calculateRem(30px);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-right: calculateRem(16px);
+    }
+  }
+
+  // .wpcf7-not-valid-tip {
+  //   display: none;
+  // }
 }

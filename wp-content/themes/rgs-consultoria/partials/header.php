@@ -3,7 +3,7 @@
         <!-- logo placeholder -->
         <div class="main-container-logo">
             <a href="<?= BASE_URL(); ?>">
-                <img src="<?= image('logo-header.png') ?>" class="img-fluid">
+                <img src="<?= image('logo.svg') ?>" class="img-fluid">
             </a>
         </div>
         <div class="main-container-mobile-menu menu">
@@ -37,7 +37,7 @@
                         ?>
                             <li>
                                 <a href="<?= get_field('link')['url']; ?>" target="_blank" title="<?= the_title() ?>" class="social">
-                                    <img src="<?= get_field('light_icon')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
+                                    <img src="<?= get_field('dark_icon')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
                                     <span class="title"><?= the_title() ?></span>
                                 </a>
                             </li>
@@ -63,7 +63,7 @@
                                 $loop->the_post();
                             ?>
                                 <a href="<?= get_field('link')['url']; ?>" target="_blank" title="<?= the_title() ?>" class="social">
-                                    <img src="<?= get_field('logo_footer')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
+                                    <img src="<?= get_field('logo_header')['url']; ?>" alt="<?= get_field('name_social_media'); ?>" class="img-fluid">
                                 </a>
                             <?php endwhile;
                             wp_reset_query(); ?>

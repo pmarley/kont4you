@@ -1,0 +1,498 @@
+.container-cidadania-italiana {
+  margin-top: calculateRem(97px);
+
+  .banner {
+    position: relative;
+    max-width: 100vw;
+    flex-shrink: 0;
+
+    @media (max-width: 768px) {
+      max-width: 100vw;
+      margin-top: calculateRem(97px);
+    }
+
+    .container-images {
+      height: 100%;
+
+      .main-banner {
+        height: 38.375rem;
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+      }
+
+      .main-container-beige {
+        width: 100%;
+        background: var(--areia-rgs, #c5c0a0);
+        height: 5rem;
+        flex-shrink: 0;
+      }
+    }
+
+    .rectangle {
+      position: absolute;
+      border: 1px solid $white;
+      top: 50%;
+      left: 31%;
+      margin-top: 1rem;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 0 rgba(0, 0, 0) !important;
+      width: 30.5rem;
+      height: 38.375rem;
+      flex-shrink: 0;
+
+      @media (max-width: 768px) {
+        top: 26%;
+        left: 64%;
+      }
+
+      @media screen and (min-width: 2500px) {
+        left: 38%;
+      }
+    }
+
+    .glass-effect {
+      position: relative;
+      padding: 20px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: inherit;
+      }
+
+      img {
+        z-index: 999;
+
+        @media (max-width: 768px) {
+          max-width: 60%;
+        }
+      }
+
+      p {
+        font-size: calculateRem(20px);
+        color: $white;
+        z-index: 999;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130.4%;
+        margin: 0;
+
+        @media (max-width: 768px) {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .session {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.94rem;
+    height: 35.3rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .left,
+    .right {
+      flex: 1;
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        color: var(--preto, #000);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130.4%;
+        /* 1.304rem */
+        margin-bottom: 1.25rem;
+
+        &.subtitle {
+          margin-top: 2.44rem;
+          margin-bottom: 1.25rem;
+        }
+      }
+
+      p {
+        color: var(--cinza-rgs, #999);
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        /* 1.18125rem */
+
+        .highlight {
+          color: var(--cinza-rgs, #999);
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 135%;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 1em;
+        text-align: start;
+
+        li:before {
+          content: "●";
+          color: $text;
+          display: inline-block;
+          width: 1em;
+          font-size: 14px;
+          margin-left: -1em;
+        }
+      }
+
+      .text-importante {
+        color: $black;
+        font-weight: 800;
+      }
+    }
+
+    .right {
+      @media (max-width: 768px) {
+        padding-top: 1rem;
+      }
+    }
+
+    .vertical-line {
+      width: 0.0625rem;
+      height: 33rem;
+      background-color: $red;
+      margin: 0 calculateRem(20px);
+      align-self: flex-start;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 1.3px;
+        margin: 0;
+      }
+    }
+  }
+
+  .arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.52rem;
+  }
+
+  .container-cidades {
+    padding-top: 0.5rem;
+
+    .por-onde-comecar {
+      background-color: $gray;
+      width: calculateRem(1200px);
+
+      h1 {
+        color: $text;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          margin-left: calculateRem(8px);
+          color: $black !important;
+        }
+      }
+
+      .primeiros-passos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.06rem;
+
+        .pesquisa {
+          padding-left: 1.56rem;
+
+          .passoum,
+          .passodois,
+          .passotres {
+            .icone-pesquisa {
+              display: flex;
+              column-gap: 1rem;
+              padding-bottom: 1rem;
+
+              h1 {
+                color: $text;
+                font-size: calculateRem(16px);
+                font-weight: 600;
+                padding-top: 1rem;
+              }
+            }
+
+            p {
+              color: $text;
+              font-size: 0.875rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 135%;
+              /* 1.18125rem */
+
+              span {
+                color: $black;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 135%;
+
+                &.highlight {
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 135%;
+                }
+
+                &.ord-list {
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 135%;
+                }
+              }
+            }
+          }
+
+          .assemble-family-tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: calculateRem(20px);
+
+            @media (max-width: 768px) {
+              column-gap: 0.3rem;
+            }
+
+            img {
+              position: inherit;
+              object-fit: contain !important;
+              margin-right: 1.25rem !important;
+              width: 2.8125rem;
+              height: 2rem;
+              margin-top: auto;
+
+              @media (max-width: 768px) {
+                width: 35px;
+              }
+            }
+
+            a {
+              color: $white;
+              background-color: $brown_400;
+              padding: 0.62rem 1.13rem;
+              border: none;
+              border-radius: 0.125rem;
+              text-decoration: none;
+              text-align: center;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 130.4%;
+              /* 1.304rem */
+
+              @media (max-width: 768px) {
+                width: 51%;
+              }
+            }
+
+            .back-to-home {
+              margin-left: auto;
+              margin-top: auto;
+            }
+          }
+        }
+
+        .img-lisboa {
+          position: relative;
+
+          .container-cidadaniareconhecida {
+            .cidadaniareconhecida {
+              padding-top: 0.88rem;
+              position: relative;
+              padding-left: 1rem;
+
+              &::before {
+                content: "";
+                position: absolute;
+                width: 0.0625rem;
+                height: 133%;
+                background-color: #b00619;
+                z-index: 1;
+                left: -1.5%;
+
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              }
+
+              @media (max-width: 768px) {
+                padding-top: calculateRem(22px);
+              }
+
+              h1 {
+                color: $text;
+                font-size: calculateRem(16px);
+                font-weight: 600;
+                padding-top: 1rem;
+              }
+
+              p {
+                color: $text;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 135%;
+
+                @media (max-width: 768px) {
+                  text-align: center;
+                }
+
+                span {
+                  color: $black;
+                  font-size: 0.875rem;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 135%;
+
+                  &.highlight {
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 135%;
+                  }
+
+                  &.ord-list {
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 135%;
+                  }
+                }
+              }
+            }
+          }
+
+          .container-img-lisboa {
+            margin-top: 2rem;
+
+            img:first-child {
+              position: absolute;
+              top: 0.5rem;
+              left: 1rem;
+
+              @media (max-width: 768px) {
+                top: -0.5rem !important;
+                left: 4.5rem !important;
+                z-index: 1;
+              }
+            }
+          }
+
+          .text-podcast {
+            display: flex;
+            justify-content: center;
+
+            h1 {
+              width: 70%;
+              color: #9d832b;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              padding-bottom: calculateRem(29px);
+            }
+          }
+        }
+      }
+
+      .arrow-down {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        color: $brown_400;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .por-onde-comecar {
+        h1 {
+          flex-direction: column;
+          padding-top: 1rem;
+        }
+
+        .primeiros-passos {
+          flex-direction: column;
+          padding-bottom: 1rem;
+          column-gap: 1rem;
+
+          .pesquisa {
+
+            .passoum,
+            .passodois,
+            .passotres {
+              .icone-pesquisa {
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                  text-align: center;
+                }
+
+                img {
+                  margin-bottom: 1rem;
+                }
+              }
+
+              p {
+                width: 100%;
+                text-align: center;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                padding-bottom: 1rem;
+              }
+            }
+          }
+
+          .img-lisboa {
+            img {
+              width: 100%;
+              height: auto;
+
+              @media (max-width: 768px) {
+                width: 65%;
+                position: relative;
+                left: 4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
