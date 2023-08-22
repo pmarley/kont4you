@@ -50,6 +50,10 @@
         top: 26%;
         left: 64%;
       }
+
+      @media screen and (min-width: 2500px) {
+        left: 38%;
+      }
     }
 
     .glass-effect {
@@ -73,6 +77,7 @@
 
       img {
         z-index: 999;
+
         @media (max-width: 768px) {
           max-width: 60%;
         }
@@ -89,6 +94,7 @@
         font-weight: 600;
         line-height: 130.4%;
         margin: 0;
+
         @media (max-width: 768px) {
           font-size: 12px;
           text-align: center;
@@ -119,7 +125,8 @@
         font-size: 1rem;
         font-style: normal;
         font-weight: 600;
-        line-height: 130.4%; /* 1.304rem */
+        line-height: 130.4%;
+        /* 1.304rem */
         margin-bottom: 1.25rem;
 
         &.subtitle {
@@ -133,7 +140,8 @@
         font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 135%; /* 1.18125rem */
+        line-height: 135%;
+        /* 1.18125rem */
 
         .highlight {
           color: var(--cinza-rgs, #999);
@@ -243,7 +251,8 @@
               font-size: 0.875rem;
               font-style: normal;
               font-weight: 400;
-              line-height: 135%; /* 1.18125rem */
+              line-height: 135%;
+              /* 1.18125rem */
 
               span {
                 color: $black;
@@ -303,7 +312,8 @@
               font-size: 1rem;
               font-style: normal;
               font-weight: 600;
-              line-height: 130.4%; /* 1.304rem */
+              line-height: 130.4%;
+              /* 1.304rem */
 
               @media (max-width: 768px) {
                 width: 51%;
@@ -339,6 +349,7 @@
                   display: none;
                 }
               }
+
               @media (max-width: 768px) {
                 padding-top: calculateRem(22px);
               }
@@ -356,6 +367,7 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 135%;
+
                 @media (max-width: 768px) {
                   text-align: center;
                 }
@@ -392,6 +404,7 @@
               position: absolute;
               top: 0.5rem;
               left: 1rem;
+
               @media (max-width: 768px) {
                 top: -0.5rem !important;
                 left: 4.5rem !important;
@@ -403,6 +416,7 @@
           .text-podcast {
             display: flex;
             justify-content: center;
+
             h1 {
               width: 70%;
               color: #9d832b;
@@ -438,6 +452,7 @@
           column-gap: 1rem;
 
           .pesquisa {
+
             .passoum,
             .passodois,
             .passotres {

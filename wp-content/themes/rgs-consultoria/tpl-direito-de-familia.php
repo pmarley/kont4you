@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <section class="container-direito-de-familia">
-  <div class="banner">
+  <!-- <div class="banner">
     <div class="rectangle">
       <div class="glass-effect">
         <img src="<?php echo image("icon_justiça.svg") ?>" alt="">
@@ -16,6 +16,20 @@ get_header();
     </div>
     <img src="<?php echo image("BannerHomologação1.png") ?>" alt="">
     <img src="<?php echo image("Rectanglebege.png") ?>" alt="">
+  </div> -->
+
+  <div class="banner">
+    <div class="rectangle">
+      <div class="glass-effect">
+        <img src="<?php echo image("icon_justiça.svg") ?>" alt="">
+        <p class="pt-3">Homologação de <br>
+          Decisão Estrangeira</p>
+      </div>
+    </div>
+    <div class="container-images">
+      <img class="main-banner" src="<?php echo image("BannerHomologação1.png") ?>" alt="">
+      <div class="main-container-beige"></div>
+    </div>
   </div>
 
   <div id="cities" class="container container-cidades">
