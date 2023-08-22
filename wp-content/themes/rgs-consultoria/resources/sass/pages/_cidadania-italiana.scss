@@ -23,7 +23,7 @@
 
       .main-container-beige {
         width: 100%;
-        background: var(--areia-rgs, #C5C0A0);
+        background: var(--areia-rgs, #c5c0a0);
         height: 5rem;
         flex-shrink: 0;
       }
@@ -190,7 +190,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: .52rem;
+    margin-bottom: 0.52rem;
   }
 
   .container-cidades {
@@ -268,6 +268,53 @@
               }
             }
           }
+
+          .assemble-family-tree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: calculateRem(20px);
+
+            @media (max-width: 768px) {
+              column-gap: 0.3rem;
+            }
+
+            img {
+              position: inherit;
+              object-fit: contain !important;
+              margin-right: 1.25rem !important;
+              width: 2.8125rem;
+              height: 2rem;
+              margin-top: auto;
+
+              @media (max-width: 768px) {
+                width: 35px;
+              }
+            }
+
+            a {
+              color: $white;
+              background-color: $brown_400;
+              padding: 0.62rem 1.13rem;
+              border: none;
+              border-radius: 0.125rem;
+              text-decoration: none;
+              text-align: center;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 130.4%; /* 1.304rem */
+
+              @media (max-width: 768px) {
+                width: 51%;
+              }
+            }
+
+            .back-to-home {
+              margin-left: auto;
+              margin-top: auto;
+            }
+          }
         }
 
         .img-lisboa {
@@ -275,7 +322,7 @@
 
           .container-cidadaniareconhecida {
             .cidadaniareconhecida {
-              padding-top: .88rem;
+              padding-top: 0.88rem;
               position: relative;
               padding-left: 1rem;
 
@@ -284,7 +331,7 @@
                 position: absolute;
                 width: 0.0625rem;
                 height: 133%;
-                background-color: #B00619;
+                background-color: #b00619;
                 z-index: 1;
                 left: -1.5%;
 
@@ -336,52 +383,6 @@
                 }
               }
             }
-
-            .assemble-family-tree {
-              display: flex;
-              position: relative;
-              padding-left: 1rem;
-
-              @media (max-width: 768px) {
-                column-gap: 0.3rem;
-              }
-
-              img {
-                position: inherit;
-                object-fit: contain !important;
-                margin-right: 1.25rem !important;
-                width: 2.8125rem;
-                height: 2rem;
-                margin-top: auto;
-
-                @media (max-width: 768px) {
-                  width: 35px;
-                }
-              }
-
-              .gen-tree {
-                color: $white;
-                background-color: $brown_400;
-                padding: .62rem 1.13rem;
-                border: none;
-                border-radius: 0.125rem;
-                text-decoration: none;
-                text-align: center;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 130.4%; /* 1.304rem */
-
-                @media (max-width: 768px) {
-                  width: 51%;
-                }
-              }
-
-              .back-to-home {
-                margin-left: auto;
-                margin-top: auto;
-              }
-            }
           }
 
           .container-img-lisboa {
@@ -389,13 +390,27 @@
 
             img:first-child {
               position: absolute;
-              top: .5rem;
+              top: 0.5rem;
               left: 1rem;
               @media (max-width: 768px) {
                 top: -0.5rem !important;
                 left: 4.5rem !important;
                 z-index: 1;
               }
+            }
+          }
+
+          .text-podcast {
+            display: flex;
+            justify-content: center;
+            h1 {
+              width: 70%;
+              color: #9d832b;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              padding-bottom: calculateRem(29px);
             }
           }
         }
