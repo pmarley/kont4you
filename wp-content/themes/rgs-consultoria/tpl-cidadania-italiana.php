@@ -175,8 +175,10 @@ get_header();
                     </div>
                     <div class="pt-3 assemble-family-tree">
                         <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
-                        <a href="">Montar minha árvore genealógica</a>
-                        <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        <a class="redir-tree" href="<?= base_url('/arvore-genealogica') ?>">Montar minha árvore genealógica</a>
+                        <a href="<?= base_url() ?>">
+                            <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="img-lisboa">

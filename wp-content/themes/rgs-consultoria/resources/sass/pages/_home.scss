@@ -288,6 +288,10 @@
       position: relative;
       height: calculateRem(560px);
 
+      @media screen and (max-width: 768px) {
+        height: fit-content !important;
+      }
+
       .container-expirence {
         width: calculateRem(488px);
         height: calculateRem(344px);
