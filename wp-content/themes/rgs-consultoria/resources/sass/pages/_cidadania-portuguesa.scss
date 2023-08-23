@@ -99,6 +99,10 @@
         width: 100%;
         flex-shrink: 0;
         object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+          height: 20rem;
+        }
       }
 
       .main-container-beige {
@@ -113,7 +117,7 @@
       position: absolute;
       border: 1px solid $white;
       top: 50%;
-      right: 31%;
+      right: 0%;
       margin-top: 1rem;
       transform: translate(-50%, -50%);
       display: flex;
@@ -127,12 +131,14 @@
       flex-shrink: 0;
 
       @media (max-width: 768px) {
-        top: 26%;
-        right: 64%;
+        top: 48%;
+        right: -12%;
+        width: 10rem;
+        height: 20rem;
       }
 
       @media screen and (min-width: 2500px) {
-        right: 22%;
+        right: 21%;
       }
     }
 
@@ -330,9 +336,13 @@
             img {
               margin: 0 !important;
               position: static !important;
+              @media screen and (max-width: 768px) {
+                width: 25px;
+                margin: .2rem;
+              }
             }
 
-            a {
+            a.redir-tree {
               color: $white;
               background-color: $brown_400;
               padding: 6px;

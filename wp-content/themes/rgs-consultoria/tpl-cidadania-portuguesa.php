@@ -36,7 +36,7 @@ get_header();
                 A Cidadania Portuguesa é um direito transmitido iure sanguinis aos brasileiros descendentes de cidadão(ã) de Portugal que comprovarem documentalmente essa ligação. Já a naturalização portuguesa é um direito concedido a pessoas sem vínculo sanguíneo com portugueses, mas com outros vínculos, como no caso de pessoa casada com cidadão(ã) português(a). Em ambos os casos, nosso escritório trabalha organizando e executando todas as fases desses processos, de forma pessoal e individualizada.
                 <br>
                 <br>
-                No processo de solicitação da Cidadania Portuguesa, não é necessário viajar a Portugal em nenhuma etapa.  O(a) requerente será representado(a) por um(a) advogado(a) da nossa equipe junto à Conservatória em Portugal, evitando, assim, problemas burocráticos que são continuamente apresentados por aquele país para retardar ou impedir a conclusão exitosa dos processos que tramitam pelos correios do Brasil para Portugal.
+                No processo de solicitação da Cidadania Portuguesa, não é necessário viajar a Portugal em nenhuma etapa. O(a) requerente será representado(a) por um(a) advogado(a) da nossa equipe junto à Conservatória em Portugal, evitando, assim, problemas burocráticos que são continuamente apresentados por aquele país para retardar ou impedir a conclusão exitosa dos processos que tramitam pelos correios do Brasil para Portugal.
             </p>
             <h2>Podem ser beneficiados com a cidadania portuguesa:</h2>
             <ul>
@@ -110,8 +110,10 @@ get_header();
                     <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
                     <div class="pt-3 assemble-family-tree">
                         <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
-                        <a href="">Montar minha árvore genealógica</a>
-                        <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        <a class="redir-tree" href="<?= base_url('/arvore-genealogica') ?>">Montar minha árvore genealógica</a>
+                        <a href="<?= base_url() ?>">
+                            <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
