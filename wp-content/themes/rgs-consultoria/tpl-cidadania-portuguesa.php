@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <section class="container-cidadania-portuguesa">
-    <div class="banner">
+    <!-- <div class="banner">
         <div class="rectangle">
             <div class="glass-effect">
                 <img src="<?php echo image("icon_cidadania portuguesa.svg") ?>" alt="">
@@ -15,15 +15,30 @@ get_header();
         </div>
         <img src="<?php echo image("BannerbandeiraPortugal.png") ?>" alt="">
         <img src="<?php echo image("Rectanglebege.png") ?>" alt="">
+    </div> -->
+    <div class="banner">
+        <div class="rectangle">
+            <div class="glass-effect">
+                <img src="<?php echo image("icon_cidadania portuguesa.svg") ?>" alt="">
+                <p>Cidadania Portuguesa</p>
+            </div>
+        </div>
+        <div class="container-images">
+            <img class="main-banner" src="<?php echo image("BannerbandeiraPortugal.png") ?>" alt="">
+            <div class="main-container-beige"></div>
+        </div>
     </div>
 
     <div class="session container">
-        <div class="left">
+        <div class="left pt-2">
             <h2>Quem tem direito a cidadania portuguesa?</h2>
             <p>
-                A Cidadania Portuguesa é um direito transmitido por sangue (iure sanguinis), porém, existem outras formas de reconhecimento, assim como a naturalização portuguesa. Em todos os casos, nosso escritório trabalha em parceria com um renomado escritório de São Paulo e juntos organizamos e patrocinamos todas as fases deste processo, de forma pessoal e individualizada. No processo de solicitação da Cidadania Portuguesa não é necessário viajar a Portugal em nenhuma etapa. O Requerente será representado por nossa advogada junto à Conservatória, evitando assim incorrermos nos problemas burocráticos que são continuamente apresentados por Portugal para retardar ou impedir a conclusão exitosa dos processos, sempre que a parte tenta fazer diretamente pelos correios.
+                A Cidadania Portuguesa é um direito transmitido iure sanguinis aos brasileiros descendentes de cidadão(ã) de Portugal que comprovarem documentalmente essa ligação. Já a naturalização portuguesa é um direito concedido a pessoas sem vínculo sanguíneo com portugueses, mas com outros vínculos, como no caso de pessoa casada com cidadão(ã) português(a). Em ambos os casos, nosso escritório trabalha organizando e executando todas as fases desses processos, de forma pessoal e individualizada.
+                <br>
+                <br>
+                No processo de solicitação da Cidadania Portuguesa, não é necessário viajar a Portugal em nenhuma etapa. O(a) requerente será representado(a) por um(a) advogado(a) da nossa equipe junto à Conservatória em Portugal, evitando, assim, problemas burocráticos que são continuamente apresentados por aquele país para retardar ou impedir a conclusão exitosa dos processos que tramitam pelos correios do Brasil para Portugal.
             </p>
-            <h2>Beneficiados</h2>
+            <h2>Podem ser beneficiados com a cidadania portuguesa:</h2>
             <ul>
                 <li>Filhos de Português (mãe ou pai).</li>
                 <li>Netos de Português (avô ou avó).</li>
@@ -35,7 +50,7 @@ get_header();
         </div>
         <div class="vertical-line"></div>
         <div class="right">
-            <p><span class="text-importante">Importante:</span> Netos somente são reconhecidos como cidadãos portugueses quando há o falecimento do seu genitor. Se o genitor for vivo, este precisará fazer o processo primeiro, para depois o neto também ter direito. Caso o pai/mãe já for considerado português, o processo segue o rito tradicional.
+            <p class="pt-4"><span class="text-importante">Importante:</span> Netos somente são reconhecidos como cidadãos portugueses quando há o falecimento do seu genitor. Se o genitor for vivo, este precisará fazer o processo primeiro, para depois o neto também ter direito. Caso o pai/mãe já for considerado português, o processo segue o rito tradicional.
                 Se o requerente vier a falecer antes do término do processo, o mesmo será cancelado, interrompendo assim, em alguns casos, a linha sucessória da cidadania.
                 Para avaliarmos o direito pretendido e sabermos o que ainda precisa ser feito para concluir o processo, bem como os custos até o reconhecimento do direito pretendido, faremos uma análise de toda a documentação reunida pelo Requerente.
 
@@ -95,8 +110,10 @@ get_header();
                     <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
                     <div class="pt-3 assemble-family-tree">
                         <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
-                        <a href="">Montar minha árvore genealógica</a>
-                        <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        <a class="redir-tree" href="<?= base_url('/arvore-genealogica') ?>">Montar minha árvore genealógica</a>
+                        <a href="<?= base_url() ?>">
+                            <img src="<?php echo image("botão_home.png") ?>" alt="">
+                        </a>
                     </div>
                 </div>
             </div>

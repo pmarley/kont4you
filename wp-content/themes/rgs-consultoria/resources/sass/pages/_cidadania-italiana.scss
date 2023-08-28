@@ -19,11 +19,15 @@
         width: 100%;
         flex-shrink: 0;
         object-fit: cover;
+
+        @media screen and (max-width: 768px) {
+          height: 20rem;
+        }
       }
 
       .main-container-beige {
         width: 100%;
-        background: var(--areia-rgs, #C5C0A0);
+        background: var(--areia-rgs, #c5c0a0);
         height: 5rem;
         flex-shrink: 0;
       }
@@ -128,8 +132,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 130.4%;
-        /* 1.304rem */
-
+        
         &.subtitle {
           margin-top: 2.44rem;
           margin-bottom: 1.25rem;
@@ -143,7 +146,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 135%;
-        /* 18.9px */
 
         .highlight {
           color: var(--cinza-rgs, #999);
@@ -210,7 +212,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: .52rem;
+    margin-bottom: 0.52rem;
   }
 
   .container-cidades {
@@ -219,6 +221,10 @@
     .por-onde-comecar {
       background-color: $gray;
       width: calculateRem(1200px);
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
 
       h1 {
         color: $text;
@@ -238,6 +244,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.06rem;
+
+        @media screen and (max-width: 758px) {
+          grid-template-columns: 1fr;
+
+        }
 
         .pesquisa {
           padding-left: 1.56rem;
@@ -273,7 +284,6 @@
               font-style: normal;
               font-weight: 400;
               line-height: 135%;
-              /* 18.9px */
               margin-bottom: 0;
 
               .link {
@@ -412,7 +422,7 @@
 
             img:first-child {
               position: absolute;
-              top: .5rem;
+              top: 0.5rem;
               left: 1rem;
 
               @media (max-width: 768px) {
@@ -420,6 +430,21 @@
                 left: 4.5rem !important;
                 z-index: 1;
               }
+            }
+          }
+
+          .text-podcast {
+            display: flex;
+            justify-content: center;
+
+            h1 {
+              width: 70%;
+              color: #9d832b;
+              font-family: Montserrat;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              padding-bottom: calculateRem(29px);
             }
           }
         }
