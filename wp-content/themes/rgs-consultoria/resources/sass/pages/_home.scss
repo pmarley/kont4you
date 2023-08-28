@@ -10,14 +10,17 @@
     display: flex;
     height: 68vh;
 
+    @media screen and (min-width: 2500px) {
+      max-width: 100vw;
+      height: 70.5vh;
+    }
+
+    @media screen and (max-width: 1920px) {
+      height: calculateRem(614px);
+    }
 
     @media screen and (max-width: 768px) {
       height: 50vh;
-    }
-
-    @media screen and (min-width: 2500px) {
-      max-width: 100vw;
-      height: 86.5vh;
     }
 
     .beige-block {
@@ -58,11 +61,10 @@
       position: relative;
       width: 100%;
       height: 100%;
-      opacity: 60%;
 
       @media screen and (min-width: 2500px) {
-        background-size: cover;
-        background-position: right;
+        background-size: cover !important;
+        background-position: 213% !important;
       }
 
       @media screen and (max-width: 1440px) {
@@ -78,7 +80,7 @@
         background-position: 40% !important;
       }
 
-      >img {
+      > img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -209,7 +211,7 @@
     grid-template-columns: 57% 500px;
 
     @media screen and (max-width: 1024px) {
-      grid-template-columns: 57% 447px;
+      grid-template-columns: 55% 45%;
     }
 
     @media screen and (max-width: 768px) {
@@ -221,11 +223,18 @@
     .main-container-about-us-content {
       color: $text;
       padding: 3.25rem 0 3.25rem 0;
-      width: 97%;
+      max-width: calculateRem(642px);
+      width: 100%;
+      flex-shrink: 0;
+
+      @media screen and (min-width: 1024px) and (max-width: 1366px) {
+        max-width: 30.125rem;
+      }
 
       @media screen and (max-width: 768px) {
         width: 100%;
         padding: 2rem 1rem;
+        margin: 0 auto;
       }
 
       .title {
@@ -235,10 +244,12 @@
       }
 
       p {
-        font-size: 1rem;
+        margin-bottom: 0;
+        text-align: justify;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 148.4%;
+        line-height: 148.4%; /* 23.744px */
       }
 
       .container-arrow {
@@ -257,7 +268,12 @@
       height: calculateRem(500px);
       position: relative;
 
-      >a {
+      @media screen and (min-width: 1024px) {
+        height: 100%;
+      }
+
+
+      > a {
         color: $text;
         background-color: white;
         padding: calculateRem(7px) calculateRem(18px);
@@ -289,7 +305,7 @@
       height: calculateRem(560px);
 
       @media screen and (max-width: 768px) {
-        height: fit-content !important;
+        height: 100%;
       }
 
       .container-expirence {
@@ -300,12 +316,14 @@
         display: grid;
         justify-content: flex-start;
         align-items: center;
-        padding: 2rem 3.81rem 2rem 5.81rem;
+        padding: 2rem 3.81rem 2rem 4.81rem;
+        position: relative;
 
         @media screen and (max-width: 768px) {
           width: 100%;
           height: calculateRem(384px);
-          padding: 2rem 3.81rem 2rem 5.81rem;
+          padding: 2rem 3.81rem 2rem 4.81rem;
+          margin-bottom: 4rem;
         }
 
         .title-expirence {
@@ -316,15 +334,52 @@
           margin-bottom: -2rem;
         }
 
-        >p {
-          font-size: 1rem;
+        > p {
+          font-size: 16px;
           font-style: normal;
           font-weight: 400;
-          line-height: 154.5%;
-          //margin-top: -33%;
+          line-height: 154.5%; /* 24.72px */
 
           @media screen and (max-width: 768px) {
             margin-top: 0;
+          }
+        }
+
+        .container-virtual-card {
+          display: grid;
+          place-items: center;
+          padding-top: .75rem;
+          padding-bottom: .81rem;
+          background-color: #C5C0A0;
+          width: 17.5rem;
+          height: 4.6875rem;
+          position: absolute;
+          bottom: -12%;
+          left: 22%;
+          transition: .3s ease-in-out all;
+          text-decoration: none;
+
+          &:hover {
+            border-radius: 6px;
+            background: #E0DCCA;
+
+            > svg {
+              display: none;
+            }
+
+            .text-hide-in-button {
+              display: block;
+              text-align: center;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              color: #826C23;
+              line-height: normal;
+            }
+          }
+
+          .text-hide-in-button {
+            display: none;
           }
         }
       }
@@ -368,10 +423,14 @@
     .main-container-photo {
       position: relative;
 
-      >img {
+      > img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+
+        @media screen and (min-width: 1024px) {
+          object-fit: none;
+        }
       }
 
       .main-container-glass-more-info-content {
@@ -435,7 +494,7 @@
       justify-content: center;
       align-items: center;
 
-      >h2 {
+      > h2 {
         color: $brown_400;
         font-size: calculateRem(25px);
         font-weight: 600;
@@ -460,6 +519,10 @@
         display: grid;
         justify-content: center;
         position: relative;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 2.3125rem;
+        }
 
         &::after {
           content: "";
@@ -497,10 +560,14 @@
             color: white;
             text-align: center;
             margin-top: calculateRem(13px);
+
+            @media screen and (max-width: 768px) {
+              font-size: calculateRem(12px);
+            }
           }
         }
 
-        >p {
+        > p {
           padding: calculateRem(8px) calculateRem(19px);
           color: $text;
           font-size: 0.75rem;
@@ -508,9 +575,13 @@
           font-weight: 400;
           line-height: normal;
           margin: 0;
+
+          @media screen and (max-width: 768px) {
+            padding: calculateRem(8px) calculateRem(8px);
+          }
         }
 
-        >a {
+        > a {
           margin: 0 auto;
           margin-top: calculateRem(20px);
           background-color: #C5C0A0;
@@ -556,7 +627,7 @@
 
 
       .main-container-content-gen-tree {
-        margin-top: 5.31rem;
+        margin-top: calculateRem(85px);
         margin-bottom: calculateRem(96px);
         background-color: #fafafa;
         max-width: 65.5625rem;
@@ -566,24 +637,28 @@
         border-radius: 2px;
         border-top: 1px solid #9D832B;
         border-bottom: 1px solid #9D832B;
-        padding: calculateRem(25px) calculateRem(20px);
+        padding: calculateRem(20px);
         width: calculateRem(889px);
+        height: calculateRem(411px);
 
         @media screen and (max-width: 768px) {
           grid-template-columns: 1fr;
           width: 100%;
+          height: 100%;
           padding: 2rem 1rem;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          margin-top: 0;
+          margin-bottom: 0;
         }
 
         .paragraph {
           color: #999;
           position: relative;
-          display: grid;
+          display: flex;
           align-items: center;
-          justify-content: center;
+          //justify-content: center;
+          flex-direction: column;
           width: calculateRem(381px);
+          height: 100%;
 
           &:last-child {
             border-left: solid 1px #9D832B;
@@ -597,31 +672,79 @@
           }
 
           @media screen and (max-width: 768px) {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
             width: 100%;
           }
 
-          >p,
-          ul>li {
-            font-size: calculateRem(12px);
-            margin-bottom: 0;
-            font-size: 0.75rem;
+          > p,
+          ul > li,
+          span {
+            text-align: justify;
+            font-size: 12px;
             font-style: normal;
             font-weight: 400;
-            line-height: 140%;
+            line-height: normal;
 
             &.highlight {
               color: black;
-              font-size: 0.75rem;
+              font-size: 10.9px;
               font-style: normal;
-              font-weight: 500;
-              line-height: 140%;
+              font-weight: 600;
+              line-height: normal;
+              margin-top: auto;
+
+              @media screen and (max-width: 768px) {
+                margin: 0 !important;
+              }
 
               &.soft {
                 font-size: 0.75rem;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 140%;
+              }
+            }
+          }
+
+          &:nth-child(2) {
+            p, span {
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 140%;
+              margin-bottom: 10px;
+
+              @media screen and (max-width: 768px) {
+                text-align: justify;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+
+              &.highlight {
+                text-align: justify;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 14px */
+
+                @media screen and (max-width: 768px) {
+                  color: black;
+                  font-size: 10.9px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                  margin-top: auto;
+                }
+
+                &.soft {
+                  font-family: Montserrat;
+                  font-size: 10px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 140%;
+                }
               }
             }
           }
@@ -639,12 +762,14 @@
 
         @media screen and (max-width: 1024px) {
           column-gap: 1rem;
+          margin-top: 1.5rem;
         }
 
         @media screen and (max-width: 768px) {
           grid-template-columns: 1fr;
           grid-template-rows: repeat(3, 1fr);
           row-gap: calculateRem(20px);
+          justify-items: center;
         }
 
         a.redir {
@@ -658,7 +783,7 @@
           text-decoration: none;
           transition: all 0.3s ease-in-out;
           border-radius: 2px;
-          font-size: calculateRem(16px);
+          font-size: calculateRem(14px);
           font-style: normal;
           font-weight: 600;
           line-height: normal;
@@ -672,6 +797,7 @@
             background-color: white !important;
             color: $brown_400 !important;
             border: solid 1px $brown_400 !important;
+            text-align: center;
 
             &:hover {
               border: solid 1px $text !important;
