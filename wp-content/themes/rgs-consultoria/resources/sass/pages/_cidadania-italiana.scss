@@ -50,15 +50,14 @@
       height: 38.375rem;
       flex-shrink: 0;
 
-      @media (max-width: 768px) {
-        top: 48%;
-        left: 26%;
-        width: 10rem;
-        height: 20rem;
-      }
-
       @media screen and (min-width: 2500px) {
         left: 38%;
+      }
+
+      @media (max-width: 768px) {
+        top: 49%;
+        left: 28%;
+        width: 40%;
       }
     }
 
@@ -112,7 +111,7 @@
   .session {
     display: flex;
     justify-content: center;
-    padding-top: 1.94rem;
+    padding-top: calculateRem(10px);
     height: 35.3rem;
 
     @media (max-width: 768px) {
@@ -133,9 +132,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 130.4%;
-        /* 1.304rem */
-        margin-bottom: 1.25rem;
-
+        
         &.subtitle {
           margin-top: 2.44rem;
           margin-bottom: 1.25rem;
@@ -144,11 +141,11 @@
 
       p {
         color: var(--cinza-rgs, #999);
-        font-size: 0.875rem;
+        text-align: justify;
+        font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 135%;
-        /* 1.18125rem */
 
         .highlight {
           color: var(--cinza-rgs, #999);
@@ -157,6 +154,16 @@
           font-weight: 600;
           line-height: 135%;
         }
+      }
+
+      span {
+        color: var(--preto, #000);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 135%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
       }
 
       ul {
@@ -188,8 +195,8 @@
 
     .vertical-line {
       width: 0.0625rem;
-      height: 33rem;
-      background-color: $red;
+      height: 100%;
+      background: #9D832B;
       margin: 0 calculateRem(20px);
       align-self: flex-start;
 
@@ -251,83 +258,96 @@
           .passotres {
             .icone-pesquisa {
               display: flex;
-              column-gap: 1rem;
-              padding-bottom: 1rem;
+              column-gap: .5rem;
+              // padding-bottom: 1rem;
+              align-items: center;
 
               h1 {
                 color: $text;
                 font-size: calculateRem(16px);
                 font-weight: 600;
                 padding-top: 1rem;
+                margin-bottom: 10px;
+              }
+
+              img {
+                width: 27px;
+                height: 19px;
               }
             }
 
             p {
-              color: $text;
-              font-size: 0.875rem;
+              color: var(--cinza-rgs, #999);
+              text-align: justify;
+              font-family: Montserrat;
+              font-size: 14px;
               font-style: normal;
               font-weight: 400;
               line-height: 135%;
-              /* 1.18125rem */
+              margin-bottom: 0;
 
-              span {
-                color: $black;
-                font-size: 0.875rem;
+              .link {
+                color: var(--bronze-rgs, #9D832B);
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 135%;
-
-                &.highlight {
-                  font-size: 0.875rem;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: 135%;
-                }
-
-                &.ord-list {
-                  font-size: 0.875rem;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: 135%;
-                }
+                text-decoration: none;
               }
             }
           }
 
           .assemble-family-tree {
             display: flex;
-            justify-content: center;
+            position: relative;
+            padding-left: 1rem;
             align-items: center;
-            column-gap: calculateRem(20px);
+
+            @media screen and (max-width: 425px) {
+              .container-mobile-center {
+                display: grid;
+                grid-template-columns: 15% 70% 15%;
+                align-items: center;
+              }
+            }
 
             @media (max-width: 768px) {
               column-gap: 0.3rem;
+              padding: 0;
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
             }
 
             img {
               position: inherit;
               object-fit: contain !important;
-              margin-right: 1.25rem !important;
-              width: 2.8125rem;
-              height: 2rem;
+              margin-right: 20px !important;
+              width: 45px;
+              height: 32px;
               margin-top: auto;
 
-              @media (max-width: 768px) {
-                width: 35px;
+              @media screen and (max-width: 425px) {
+                width: 25px;
+                height: 25px;
+                margin: 0 5px !important;
+                padding: 0;
               }
             }
 
             a {
-              @media screen and (max-width: 768px) {
-                margin-top: auto;
-                margin-left: auto;
+              img {
+                margin-right: 0 !important;
+                margin-left: 20px;
+                width: 27px;
+                height: 27px;
               }
             }
 
-            a.redir-tree {
+            .gen-tree {
               color: $white;
               background-color: $brown_400;
-              padding: 0.62rem 1.13rem;
+              padding: .62rem 1.13rem;
               border: none;
               border-radius: 0.125rem;
               text-decoration: none;
@@ -338,14 +358,13 @@
               line-height: 130.4%;
               /* 1.304rem */
 
-              @media (max-width: 768px) {
-                width: 51%;
+              @media screen and (max-width: 425px) {
+                a {
+                  padding: .1rem;
+                  font-size: .7rem;
+                  margin: 0;
+                }
               }
-            }
-
-            .back-to-home {
-              margin-left: auto;
-              margin-top: auto;
             }
           }
         }
@@ -353,69 +372,43 @@
         .img-lisboa {
           position: relative;
 
+
           .container-cidadaniareconhecida {
-            .cidadaniareconhecida {
-              padding-top: 0.88rem;
-              position: relative;
-              padding-left: 1rem;
+            @media screen and (max-width: 768px) {
+              padding: 1rem;
+            }
 
-              &::before {
-                content: "";
-                position: absolute;
-                width: 0.0625rem;
-                height: 133%;
-                background-color: #b00619;
-                z-index: 1;
-                left: -1.5%;
+            .passotres {
 
-                @media (max-width: 768px) {
-                  display: none;
+              .icone-pesquisa {
+                display: flex;
+                column-gap: .5rem;
+                // padding-bottom: 1rem;
+                align-items: center;
+
+                h1 {
+                  color: $text;
+                  font-size: calculateRem(16px);
+                  font-weight: 600;
+                  padding-top: 1rem;
+                  margin-bottom: 10px;
                 }
-              }
 
-              @media (max-width: 768px) {
-                padding-top: calculateRem(22px);
-              }
-
-              h1 {
-                color: $text;
-                font-size: calculateRem(16px);
-                font-weight: 600;
-                padding-top: 1rem;
+                img {
+                  width: 27px;
+                  height: 19px;
+                }
               }
 
               p {
-                color: $text;
-                font-size: 0.875rem;
+                color: var(--cinza-rgs, #999);
+                text-align: justify;
+                font-family: Montserrat;
+                font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 135%;
-
-                @media (max-width: 768px) {
-                  text-align: center;
-                }
-
-                span {
-                  color: $black;
-                  font-size: 0.875rem;
-                  font-style: normal;
-                  font-weight: 400;
-                  line-height: 135%;
-
-                  &.highlight {
-                    font-size: 0.875rem;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 135%;
-                  }
-
-                  &.ord-list {
-                    font-size: 0.875rem;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 135%;
-                  }
-                }
+                /* 18.9px */
               }
             }
           }
@@ -468,23 +461,27 @@
 
     @media (max-width: 768px) {
       .por-onde-comecar {
+        width: 100% !important;
+
         h1 {
           flex-direction: column;
           padding-top: 1rem;
         }
 
         .primeiros-passos {
-          flex-direction: column;
+          grid-template-columns: 1fr;
           padding-bottom: 1rem;
           column-gap: 1rem;
 
           .pesquisa {
+            // margin-bottom: 3rem;
+            padding: 1rem;
 
             .passoum,
             .passodois,
             .passotres {
               .icone-pesquisa {
-                flex-direction: column;
+                // flex-direction: column;
                 align-items: center;
 
                 h1 {
@@ -498,24 +495,22 @@
 
               p {
                 width: 100%;
-                text-align: center;
-                padding-right: 1rem;
-                padding-left: 1rem;
-                padding-bottom: 1rem;
+                color: $text;
+                text-align: justify;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 135%;
+                /* 18.9px */
               }
             }
           }
 
           .img-lisboa {
             img {
-              width: 100%;
-              height: auto;
-
-              @media (max-width: 768px) {
-                width: 65%;
-                position: relative;
-                left: 4rem;
-              }
+              width: 65%;
+              position: relative;
+              left: 4rem;
             }
           }
         }
