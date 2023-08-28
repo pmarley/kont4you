@@ -316,13 +316,13 @@
         display: grid;
         justify-content: flex-start;
         align-items: center;
-        padding: 2rem 3.81rem 2rem 5.81rem;
+        padding: 2rem 3.81rem 2rem 4.81rem;
         position: relative;
 
         @media screen and (max-width: 768px) {
           width: 100%;
           height: calculateRem(384px);
-          padding: 2rem 3.81rem 2rem 5.81rem;
+          padding: 2rem 3.81rem 2rem 4.81rem;
           margin-bottom: 4rem;
         }
 

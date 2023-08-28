@@ -22,7 +22,7 @@
           padding-left: 7.6rem;
         }
 
-        @media screen and (max-width:  425px) {
+        @media screen and (max-width: 425px) {
           padding: 0 !important;
         }
       }
@@ -47,9 +47,13 @@
             justify-content: flex-end;
           }
 
-          >svg {
+          svg {
             position: absolute;
             left: -10% !important;
+
+            &:nth-child(1) {
+              left: -8%;
+            }
 
             @media screen and (max-width: 768px) {
               left: 6%;
