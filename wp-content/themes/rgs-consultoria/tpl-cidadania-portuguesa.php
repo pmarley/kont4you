@@ -20,7 +20,7 @@ get_header();
         <div class="rectangle">
             <div class="glass-effect">
                 <img src="<?php echo image("icon_cidadania portuguesa.svg") ?>" alt="">
-                <p>Cidadania Italiana</p>
+                <p>Cidadania Portuguesa</p>
             </div>
         </div>
         <div class="container-images">
@@ -50,57 +50,62 @@ get_header();
         </div>
         <div class="vertical-line"></div>
         <div class="right">
-            <p class="pt-4"><span class="text-importante">Importante:</span> Netos somente são reconhecidos como cidadãos portugueses quando há o falecimento do seu genitor. Se o genitor for vivo, este precisará fazer o processo primeiro, para depois o neto também ter direito. Caso o pai/mãe já for considerado português, o processo segue o rito tradicional.
-                Se o requerente vier a falecer antes do término do processo, o mesmo será cancelado, interrompendo assim, em alguns casos, a linha sucessória da cidadania.
-                Para avaliarmos o direito pretendido e sabermos o que ainda precisa ser feito para concluir o processo, bem como os custos até o reconhecimento do direito pretendido, faremos uma análise de toda a documentação reunida pelo Requerente.
+            <p class="pt-4"><span class="text-importante">Importante:</span> netos(as) somente são reconhecidos diretamente como cidadãos(ãs) portugueses(as) quando há o falecimento do seu genitor; sendo este vivo, será preciso, primeiramente, fazer seu reconhecimento para então o(a) neto(a) exercer esse direito. Para avaliar o direito pretendido e saber o que ainda precisa ser feito documentalmente para o êxito no pedido de atribuição da nacionalidade portuguesa, bem como os custos até o reconhecimento do direito pretendido, precisamos analisar os seguintes documentos: certidões de nascimento (ou batismo), casamento (se houver) e óbito do(ã) cidadão português(a); certidões de nascimento, casamento e óbito dos descendentes do(a) português(a) até o(a) requerente.
+                <br>
+                <br>
+                Preencha a árvore genealógica contida neste site e dê um passo concreto para realização do sonho da cidadania europeia.
 
-                Para uma analise eficaz o requerente deve reunir a seguinte documentação (reúna o máximo dos documentos abaixo que conseguir):
-                Certidão de Nascimento ou Batismo e Casamento (se houver) do Cidadão Português atualizada.
-                Certidões de Casamento (se houver) e Óbito do antepassado Português, em formato Cópia Reprográfica
-                Certidão de Nascimento do Requerente, em formato Cópia Reprográfica • Preencha a árvore genealógica anexa com os nomes dos ascendentes do Requerente até o (a) português (a).
             </p>
         </div>
     </div>
 
-    <div class="arrow-down container">
+    <!-- <div class="arrow-down container">
         <a href="#cities">
             <img src="<?php echo image("icone-flecha.svg") ?>" alt="">
         </a>
-    </div>
+    </div> -->
 
     <div id="cities" class="container container-cidades">
         <div class="por-onde-comecar">
-            <h1>Por onde começar em <span class="passos-simples"> 3 passos simples</span></h1>
             <div class="primeiros-passos">
                 <div class="pesquisa">
+                <h1 class="pt-3">Por onde começar em<span class="passos-simples">  4 passos simples</span></h1>
                     <div class="passoum">
                         <div class="icone-pesquisa">
-                            <h1>1º Passo: Pesquisa </h1>
-                            <img src="<?php echo image("Pesquizar.svg") ?>" alt="">
+                            <h1>1º Passo: Monte sua Árvore Genealógica </h1>
+                            <img src="<?php echo image("icon-arvore.svg") ?>" alt="">
                         </div>
-                        <p>Reúna cópias de documentos e informações orais que nos ajudem na localização da certidão de nascimento (e casamento, se for o caso) do ascendente português. Para isto, cópia do passaporte, dos documentos de identidade, cartas de família, ou, uma cópia da própria certidão portuguesa antiga. Com informações precisas podemos pedir uma segunda via do registro de nascimento ou batismo (e casamento, se for o caso) em Portugal.</p>
+                        <p>Preencha a árvore genealógica autoexplicativa contida nesse link começando pelo seu nome até o nome do português (a)do (a) qual você descende. Não sabendo o nome de algum cônjuge dessa linhagem, ou qualquer outro dado solicitado, ignore a pergunta e continue montando a árvore. Não sabendo ao certo o nome de um ascendente, não pare de completar os dados, escreva no campo “nome” o apelido pelo qual esse parente era conhecido ou o nome da posição que essa pessoa ocupa na sua genealogia, como “vô Zeca” ou simplesmente “meu bisavô”. Assim que a documentação for reunida, essas lacunas serão resolvidas. Gerada a árvore, clique em “enviar”.
+                            <br>
+                            <br>
+                            Pronto! Você iniciou sua jornada pelo reconhecimento da cidadania portuguesa! A partir desse ponto, montaremos juntos o quebra-cabeça da sua linhagem europeia e, ao final, teremos uma árvore genealógica completa que virá acompanhada das respectivas certidões de registro civil de cada ascendente seu, sendo esses os documentos básicos para o sucesso do processo de reconhecimento de qualquer nacionalidade.
+
+                        </p>
                     </div>
 
                     <div class="passodois">
                         <div class="icone-pesquisa">
-                            <h1>2º Passo: Organizar documentos </h1>
-                            <img src="<?php echo image("icon_documentos.svg") ?>" alt="">
+                            <h1>2º Passo: Pesquisa em Postugal </h1>
+                            <img src="<?php echo image("Pesquizar.svg") ?>" alt="">
                         </div>
-                        <p>Escanei todas as certidões brasileiras de registro civil, desde o ascendente português até o Requerente, são elas: Certidões de nascimento, casamento e óbito. <span>Para avaliação do direito pretendido é importante que sejam certidões novas</span>, em <span>Inteiro Teor</span> e digitadas, já que são documentos legíveis enquanto as cópias reprográficas (exigência de Portugal) podem estar ilegíveis. Peça ao cartório cada certidão nos dois formatos: inteiro teor e reprográfica. Se precisar solicite um orçamento que nós fazemos este trabalho de reunião das certidões brasileiras.
-                            <br>
-                            <br>
-                            O foco dos documentos a serem reunidos refere-se apenas a linhagem portuguesa, não é necessário juntar documentos dos cônjuges.
+                        <p>Reúna cópias de documentos e informações que nos ajudem na localização da certidão de nascimento (e casamento, se for o caso) do ascendente em Portugal. Para isso serão muito úteis: cópia do passaporte, dos documentos de identidade, cartas de família, ou uma cópia da própria certidão portuguesa antiga. Com essas informações, podemos pedir uma segunda via do registro de nascimento ou batismo (e casamento, se for o caso) em Portugal.
                         </p>
                     </div>
                     <div class="passotres">
                         <div class="icone-pesquisa">
-                            <h1>3º Passo: Monte sua Árvore Genealógica </h1>
-                            <img src="<?php echo image("icon-arvore.svg") ?>" alt="">
+                            <h1>3º Passo: Organização documental </h1>
+                            <img src="<?php echo image("icon_documentos.svg") ?>" alt="">
                         </div>
-                        <p>Reunida a documentação, preencha a árvore genealógica com muita atenção e escrevendo os nomes e sobrenomes completos de acordo com os documentos, nos envie para análise e aguarde ser respondido.
+                        <p>A chave para o sucesso dos processos está neste ponto, sendo essa a especialidade do nosso escritório!
                             <br>
                             <br>
-                            <span>ATENÇÃO:</span> É muito importante que a documentação seja enviada junto com sua árvore genealógica preenchida, isso facilita nossa avaliação para agilizar o devido processo.
+                            Tendo a árvore genealógica como base, escaneie todas as certidões brasileiras de registro civil, desde o(a) ascendente português(a) até o(a) Requerente (você), focando apenas em três registros de cada um: certidão de nascimento, casamento e óbito.
+                            <br>
+                            <br>
+                            Comece juntando cópias antigas desses registros e, caso precise retirar as certidões brasileiras em qualquer cartório do país, peça em modelo INTEIRO TEOR, ou peça um orçamento, que buscamos essas certidões em qualquer cartório do Brasil. O foco dos documentos a serem reunidos refere-se apenas à linhagem portuguesa, não sendo necessário juntar documentos dos cônjuges.
+                            <br>
+                            <br>
+                            Consulte-nos para uma análise documental desse conjunto de registros e vamos juntos planejar estratégias para correção, suplementação e qualquer outra atividade que se faça necessária para atender às burocráticas regras impostas pela lei portuguesa referentes à prova de descendência europeia.
 
                         </p>
                     </div>
@@ -108,7 +113,15 @@ get_header();
                 <div class="img-lisboa">
                     <img class="" src="<?php echo image("foto-Lisboa.png") ?>" alt="">
                     <img src="<?php echo image("quadrado-bege.svg") ?>" alt="">
-                    <div class="pt-3 assemble-family-tree">
+                    <div class="passodois">
+                        <div class="icone-pesquisa">
+                            <h1>4º Passo: Reconhecimento da dupla cidadania </h1>
+                            <img src="<?php echo image("icon_cidadaniaPortuguesaDourado.svg") ?>" alt="">
+                        </div>
+                        <p>Identificado o direito à cidadania portuguesa e reunidos os documentos, elaboraremos um plano de trabalho com custos, prazos e estratégias para alcançar com rapidez o direito pretendido. 
+                        </p>
+                    </div>
+                    <div class="pt-4 assemble-family-tree">
                         <img src="<?php echo image("BotãoÁrvoreGenealógica.png") ?>" alt="">
                         <a class="redir-tree" href="<?= base_url('/arvore-genealogica') ?>">Montar minha árvore genealógica</a>
                         <a href="<?= base_url() ?>">
