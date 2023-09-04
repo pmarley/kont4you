@@ -20,7 +20,7 @@ get_header();
         <div class="rectangle">
             <div class="glass-effect">
                 <img src="<?php echo image("icon_cidadania portuguesa.svg") ?>" alt="">
-                <p>Cidadania Portuguesa</p>
+                <p>Cidadania Italiana</p>
             </div>
         </div>
         <div class="container-images">

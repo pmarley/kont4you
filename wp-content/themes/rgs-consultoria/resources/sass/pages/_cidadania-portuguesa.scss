@@ -1,4 +1,6 @@
 .container-cidadania-portuguesa {
+  margin-top: calculateRem(97px);
+
   // .banner {
   //   position: relative;
   //   max-width: 100vw;
@@ -117,7 +119,7 @@
       position: absolute;
       border: 1px solid $white;
       top: 50%;
-      right: 0%;
+      right: 10%;
       margin-top: 1rem;
       transform: translate(-50%, -50%);
       display: flex;
@@ -130,15 +132,14 @@
       height: 38.375rem;
       flex-shrink: 0;
 
-      @media (max-width: 768px) {
-        top: 48%;
-        right: -12%;
-        width: 10rem;
-        height: 20rem;
+      @media screen and (min-width: 2500px) {
+        left: 38%;
       }
 
-      @media screen and (min-width: 2500px) {
-        right: 21%;
+      @media (max-width: 768px) {
+        top: 49%;
+        left: 28%;
+        width: 40%;
       }
     }
 
