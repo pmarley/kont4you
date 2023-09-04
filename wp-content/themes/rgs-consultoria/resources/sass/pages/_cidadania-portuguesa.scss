@@ -364,6 +364,35 @@
               left: calculateRem(8px) !important;
             }
           }
+
+          
+          .passodois{
+            .icone-pesquisa {
+              display: flex;
+              column-gap: 1rem;
+              padding-bottom: 1rem;
+
+              h1 {
+                color: $text;
+                font-size: calculateRem(16px);
+                font-weight: 600;
+                padding-top: 1rem;
+              }
+            }
+
+            p {
+              color: $text;
+              width: calculateRem(566px);
+              text-align: start;
+              font-size: calculateRem(14px);
+              font-weight: 400;
+
+              span {
+                color: $black;
+                font-weight: 600;
+              }
+            }
+          }
         }
       }
 
