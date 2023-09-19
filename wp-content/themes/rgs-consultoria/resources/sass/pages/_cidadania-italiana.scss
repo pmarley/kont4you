@@ -114,6 +114,8 @@
     justify-content: center;
     padding-top: calculateRem(10px);
     height: 35.3rem;
+    padding-right: 0;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -252,7 +254,7 @@
         }
 
         .pesquisa {
-          padding-left: 1.56rem;
+          padding-left: 15px;
 
           .passoum,
           .passodois,
@@ -286,6 +288,7 @@
               font-weight: 400;
               line-height: 135%;
               margin-bottom: 0;
+              padding-right: 15px;
 
               .link {
                 color: var(--bronze-rgs, #9D832B);
@@ -375,6 +378,9 @@
 
 
           .container-cidadaniareconhecida {
+            border-right: solid 1px #9d832b;
+            padding: 1rem;
+
             @media screen and (max-width: 768px) {
               padding: 1rem;
             }

@@ -40,3 +40,64 @@ get_header();
 <?php partial('contact-form') ?>
 
 <?php get_footer(); ?>
+
+
+<!---
+Seu nome: [your-name]
+
+É casado: [your-is-married]
+
+Tem filhos menores: [your-child]
+
+Nome dos filhos: [your-children-name]
+
+Sua cidadania virá do seu pai ou mãe: [your-parent] 
+
+Nome do pai ou da mãe: [your-parent-name] 
+
+Nasceu antes de 1948:  [your-born-before] 
+
+Seu pai ou mãe é casado:  [your-parent-is-married] 
+
+Nome do cônjuge: [your-parent-married-name] 
+
+Cidadania:  [your-italian] 
+
+
+Sua cidadania virá do seu avô ou avó: [your-citizenship] 
+
+Nome do seu avô ou avó: [your-grandfather-name] 
+
+Seu avô ou avó nasceu antes de 1948: [your-grandfather-before] 
+
+Seu avô ou avó é casado: [your-grandfather-is-married] 
+
+Nome do cônjuge: [your-grandfather-married-name] 
+
+Cidadania: [your-grandfather-italian] 
+
+
+Sua cidadania virá do seu bisavô ou bisavó: [your-great-granfather] 
+
+Nome do seu bisavô ou bisavó: [your-great-grandfather-name] 
+
+Seu bisavô ou bisavó nasceu antes de 1948: [your-great-granfather-before] 
+
+Seu bisavô ou bisavó é casado: [your-great-granfather-is-married] 
+
+Nome do cônjuge: [your-great-grandfather-married-name] 
+
+Cidadania: [your-great-granfather-italian] 
+
+
+Sua cidadania virá do seu tetravô ou tetravó: [your-great-grandmother] 
+
+Nome do seu tetravô ou tetravó: [your-tetravo-name] 
+
+Seu tetravô ou tetravó nasceu antes de 1948: [your-tetravo-antes] 
+
+Seu tetravô ou tetravó é casado: [your-tetravo-casado] 
+
+Nome do cônjuge: [your-tetravo-conjuge-nome] 
+
+Cidadania: [your-tetravo-italian] 
