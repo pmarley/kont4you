@@ -30,7 +30,7 @@ get_header();
     </div>
 
     <div class="session container">
-        <div class="left pt-2">
+        <div class="left container-beneficiados pt-2">
             <h2>Quem tem direito a cidadania portuguesa?</h2>
             <p>
                 A Cidadania Portuguesa é um direito transmitido iure sanguinis aos brasileiros descendentes de cidadão(ã) de Portugal que comprovarem documentalmente essa ligação. Já a naturalização portuguesa é um direito concedido a pessoas sem vínculo sanguíneo com portugueses, mas com outros vínculos, como no caso de pessoa casada com cidadão(ã) português(a). Em ambos os casos, nosso escritório trabalha organizando e executando todas as fases desses processos, de forma pessoal e individualizada.
@@ -116,7 +116,7 @@ get_header();
                     <div class="passodois">
                         <div class="icone-pesquisa">
                             <h1>4º Passo: Reconhecimento da dupla cidadania </h1>
-                            <img src="<?php echo image("icon_cidadaniaPortuguesaDourado.svg") ?>" alt="">
+                            <img src="<?php echo image("icon_boneco_portuguesa.svg") ?>" alt="">
                         </div>
                         <p>Identificado o direito à cidadania portuguesa e reunidos os documentos, elaboraremos um plano de trabalho com custos, prazos e estratégias para alcançar com rapidez o direito pretendido. 
                         </p>
