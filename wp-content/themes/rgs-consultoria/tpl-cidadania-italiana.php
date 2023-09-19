@@ -220,7 +220,7 @@ get_header();
                                 sobre nosso trabalho em entrevistas exclusivas.
                             </h1>
                         </div>
-                        <iframe src="https://open.spotify.com/embed/episode/1c64QkFTVKS34kQ7OZbqt8" width="98%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://open.spotify.com/embed/episode/1c64QkFTVKS34kQ7OZbqt8" width="98%" height="130" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
             </div>
