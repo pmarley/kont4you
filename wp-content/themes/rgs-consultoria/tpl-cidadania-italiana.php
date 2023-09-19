@@ -59,6 +59,7 @@ get_header();
         <div class="vertical-line"></div>
         <div class="right">
             <h2>Retificação Judicial ou Administrativa</h2>
+
             <p>Caso algum dos seus ascendentes não tenha registro de nascimento ou de casamento nos cartórios
                 brasileiros, nosso escritório tem ampla experiência em promover processos de retificação (judicial
                 ou administrativa) de erros, bem como de lavratura tardia dessas certidões.
@@ -83,38 +84,6 @@ get_header();
                 Promovemos integralmente seu processo nos consulados brasileiros ou diretamente na Itália
             </p>
         </div>
-    </div>
-            <p>Nosso escritório tem muita experiência nos processos de retificação (judicial ou administrativa) dos
-                erros, bem como na lavratura de certidão tardia de nascimento e casamento, para os casos em que
-                algum dos seus ascendentes não tenha sido registrado em vida nos cartórios brasileiros.</p>
-            <br>
-            <p>Uma ação judicial supre esta lacuna e permite o sucesso do processo de reconhecimento desta
-                cidadania.
-            </p>
-            <br>
-            <p>Sobre a necessidade ou não de retificação de dados nas certidões brasileiras, bem como dúvidas sobre
-                a certidão tardia de nascimento e casamento, consulte-nos analisando o seu caso concreto.</p>
-
-            <h2 class="subtitle">Cidadania pela via materna</h2>
-
-            <p>Nosso escritório conta com uma sólida rede de advogados na Itália, especializados em processos
-                judiciais que culminam com o reconhecimento da cidadania para aqueles que tem na sua linha
-                sucessória uma ou mais de uma ascendente mulher, cujo filho ou filha nasceu antes de 01 de janeiro
-                de 1948.
-            </p>
-            <br>
-            <p>Estes casos, que duram em média 1 ano e meio na justiça italiana tem a vantagem de não precisar que
-                os requerentes se desloquem até a Itália, além de permitir que a cidadania seja feita para até 6
-                parentes em um mesmo processo, diminuindo consideravelmente os custos. Consulte-se se este for o seu
-                caso.
-            </p>
-        </div>
-    </div>
-
-    <div class="arrow-down container">
-        <a href="#cities">
-            <img src="<?php echo image("icone-flecha.svg") ?>" alt="">
-        </a>
     </div>
 
     <div id="cities" class="container container-cidades">
@@ -245,23 +214,15 @@ get_header();
                                 Formada exclusivamente por advogados dos dois países, entre os quais uma advogada ítalo-brasileira especialista em direito internacional, nossa equipe conduz os processos judiciais movidos na Itália mediante contratos elaborados de forma a garantir tranquilidade e segurança jurídica a todos os envolvidos, podendo o andamento do processo na Itália ser acompanhado pelos clientes por meio do aplicativo oficial da justiça italiana.
                             </p>
                         </div>
-
+                        <div class="text-podcast">
+                            <h1>
+                                Conheça nosso audiocast e entenda ainda mais
+                                sobre nosso trabalho em entrevistas exclusivas.
+                            </h1>
+                        </div>
+                        <iframe src="https://open.spotify.com/embed/episode/1c64QkFTVKS34kQ7OZbqt8" width="98%" height="130" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
-                    <div class="text-podcast">
-                        <h1>
-                            Conheça nosso audiocast e entenda ainda mais
-                            sobre nosso trabalho em entrevistas exclusivas.
-                        </h1>
-                    </div>
-                    <iframe src="https://open.spotify.com/embed/episode/1c64QkFTVKS34kQ7OZbqt8" width="98%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
-                </div>
-            </div>
-            <div class="arrow-down container">
-                <a href="#contact-form">
-                    <img src="<?php echo image("icon_direção.svg") ?>" alt="">
-                </a>
             </div>
             <div class="arrow-down container">
                 <a href="#contact-form">
