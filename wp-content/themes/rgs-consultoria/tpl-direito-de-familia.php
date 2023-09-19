@@ -26,7 +26,7 @@ get_header();
         <div class="pesquisa">
           <div class="passotres">
             <h1>O que é a homologação de decisão estrangeira e como operacionalizá-la na justiça brasileira?</h1>
-            <p>A homologação é o ato de reconhecer juridicamente e dar validade a qualquer decisão terminativa (judicial ou não) advinda de um órgão estatal de país estrangeiro. Depois de homologada no Brasil a referida decisão (que pode ou não ser uma sentença judicial), esse documento passa a ter plena validade no nosso ordenamento, podendo, por exemplo, ser executado na justiça brasileira ou apresentado, em um cartório para averbação de divórcio. Um exemplo clássico é um acordo de alimentos firmado em outro país, que pode e deve ser executado pela justiça brasileira, após sua homologação.
+            <p>A homologação é o ato de reconhecer juridicamente e dar validade a qualquer decisão terminativa (judicial ou não) advinda de um órgão estatal de país estrangeiro. Depois de homologada no Brasil a referida decisão (que pode ou não ser uma sentença judicial), passa a ter plena validade no nosso ordenamento, podendo, por exemplo, ser executado na justiça brasileira ou apresentado, em um cartório para averbação de divórcio. Um exemplo clássico é um acordo de alimentos firmado em outro país, que pode e deve ser executado pela justiça brasileira, após sua homologação.
               A Constituição Federal estabelece que a homologação de sentenças ou decisões estrangeiras é feita por meio de processo que tramita no Superior Tribunal de Justiça (STJ), tendo que, obrigatoriamente, ser conduzido por um(a) advogado(a). .
               <br>
               <br>
@@ -61,7 +61,7 @@ get_header();
   </div>
 
   <div>
-    <img id="img-tarja" src="<?php echo image("TarjaDireitodeFamília.png") ?>" alt="">
+    <img id="img-tarja" src="<?php echo image("Tarja Direito de Família.png") ?>" alt="">
   </div>
 
   <div id="cities" class="container container-cidades">
@@ -70,6 +70,7 @@ get_header();
         <div class="pesquisa">
           <div class="passotres">
             <h1>Consultoria, Sucessões e Legislação Estrangeira</h1>
+            <p>
             Conduzido por uma experiente advogada, professora de direito internacional, nosso escritório está plenamente capacitado para representar os interesses dos seus clientes em processos que tramitem no Brasil e que tenham alguma das partes e/ou patrimônio em país estrangeiro.
             <br>
             <br>

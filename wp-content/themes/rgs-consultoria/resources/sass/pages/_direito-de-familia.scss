@@ -36,7 +36,7 @@
     .rectangle {
       position: absolute;
       top: 50%;
-      left: 31%;
+      left: 35%;
       margin-top: 1rem;
       transform: translate(-50%, -50%);
       display: flex;
@@ -143,12 +143,14 @@
           .passotres {
             h1 {
               color: $black;
-              font-size: calculateRem(16px);
-              font-weight: 800;
+              font-size: calculateRem(20px);
+              font-weight: 600;
               padding-top: 1rem;
+              width: 80%;
 
               @media (max-width: 768px) {
                 text-align: center;
+                width: 100%;
               }
             }
 
@@ -158,6 +160,7 @@
               width: 86%;
               font-size: calculateRem(14px);
               font-weight: 400;
+              text-align: justify;
               @media (max-width: 768px) {
                 text-align: center;
               }
@@ -189,6 +192,11 @@
 
       .img-lisboa {
         position: relative;
+        margin-right: 16px;
+
+        @media (max-width: 768px) {
+          margin-right: 0;
+        }
 
         .assemble-family-tree {
           display: flex;

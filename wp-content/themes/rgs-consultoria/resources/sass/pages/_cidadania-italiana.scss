@@ -378,11 +378,14 @@
 
 
           .container-cidadaniareconhecida {
-            border-right: solid 1px #9d832b;
+            border-left: solid 1px #9d832b;
             padding: 1rem;
+            margin-left: -10px;
 
             @media screen and (max-width: 768px) {
               padding: 1rem;
+              margin-left: 0;
+              border-left: none;
             }
 
             .passotres {
