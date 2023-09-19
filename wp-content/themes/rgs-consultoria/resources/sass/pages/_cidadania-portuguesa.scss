@@ -269,7 +269,7 @@
         .img-lisboa {
           position: relative;
           top: -26rem !important;
-          margin-right: 5px;
+          max-width: calculateRem(575px);
 
           @media (max-width: 768px) {
             margin-right: 0;
