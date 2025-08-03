@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta charset="<?php echo bloginfo('charset'); ?>">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--[if IE]><![endif]-->
-
-    <link rel="shortcut icon" href="<?php echo get_site_icon_url();  ?>">
-
-    <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
-    <meta name="author" content="">
-    <meta property="og:title" content="<?php echo get_bloginfo('name'); ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="<?php echo get_bloginfo('description'); ?>">
-    <meta property="og:url" content="<?php echo get_bloginfo('url'); ?>">
-    <meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>">
-    <meta property="og:image" content="<?php echo image('share.jpg'); ?>">
-
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
-
-    <style>
-        :root {
-            --check-icon: url(<?php echo image('checked.svg'); ?>);
-        }
-    </style>
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="app">
-        <?php partial('header'); ?>
+<?php wp_body_open(); ?>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+                Kont4You
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="<?php echo esc_url(home_url('/')); ?>">Página Inicial</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main id="primary" class="site-main">

@@ -1,0 +1,91 @@
+{
+  "theme_name": "Kont4You - Contabilidade Digital",
+  "version": "1.0.0",
+  "description": "Tema moderno para contabilidade digital, baseado no design da Kont4You",
+  "author": "Matheus",
+  "author_uri": "https://matheuspmelo.github.io/",
+  "requires_wp": "5.0",
+  "requires_php": "7.4",
+  "license": "GPL v2 or later",
+  "license_uri": "https://www.gnu.org/licenses/gpl-2.0.html",
+  "text_domain": "kont4you",
+  "domain_path": "/languages",
+  "features": {
+    "custom_logo": true,
+    "post_thumbnails": true,
+    "title_tag": true,
+    "html5": [
+      "search-form",
+      "comment-form",
+      "comment-list",
+      "gallery",
+      "caption"
+    ],
+    "customize_selective_refresh_widgets": true,
+    "responsive_embeds": true,
+    "wp_block_styles": true,
+    "align_wide": true,
+    "editor_style": true,
+    "dark_editor_style": false
+  },
+  "menus": {
+    "primary": "Menu Principal",
+    "footer": "Menu Rodapé"
+  },
+  "custom_post_types": {
+    "services": {
+      "name": "Serviços",
+      "singular_name": "Serviço",
+      "slug": "servicos",
+      "supports": ["title", "editor", "thumbnail", "excerpt"],
+      "has_archive": true
+    },
+    "testimonials": {
+      "name": "Depoimentos",
+      "singular_name": "Depoimento",
+      "slug": "depoimentos",
+      "supports": ["title", "editor", "thumbnail"],
+      "has_archive": false
+    }
+  },
+  "customizer_sections": {
+    "kont4you_contact_info": {
+      "title": "Informações de Contato",
+      "priority": 30,
+      "settings": {
+        "kont4you_address": {
+          "default": "Av. Rio Branco, 125 - 19º andar - Centro, RJ",
+          "type": "text"
+        },
+        "kont4you_email": {
+          "default": "kontcomigo@kont4you.com.br",
+          "type": "email"
+        },
+        "kont4you_phone": {
+          "default": "(21) 98306-0000",
+          "type": "text"
+        }
+      }
+    }
+  },
+  "colors": {
+    "primary": "#2563eb",
+    "primary_dark": "#1d4ed8",
+    "secondary": "#fbbf24",
+    "secondary_dark": "#f59e0b",
+    "dark": "#1f2937",
+    "gray_light": "#f8fafc",
+    "gray": "#6b7280",
+    "gray_dark": "#374151"
+  },
+  "typography": {
+    "font_family": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    "font_weights": [300, 400, 500, 600, 700],
+    "line_height": 1.6
+  },
+  "breakpoints": {
+    "mobile": "768px",
+    "tablet": "1024px",
+    "desktop": "1200px"
+  }
+} 

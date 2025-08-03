@@ -1,0 +1,15 @@
+Para criar o screenshot do tema:
+
+1. Tire uma captura de tela da página inicial do tema
+2. Salve como "screenshot.png" 
+3. Dimensões recomendadas: 1200x900 pixels
+4. Formato: PNG
+5. Substitua o arquivo screenshot.png existente
+
+O screenshot deve mostrar:
+- Header com logo e navegação
+- Hero section com título principal
+- Pelo menos uma seção de conteúdo (Como Funciona, Sobre Nós, ou Serviços)
+- Footer
+
+Isso ajudará os usuários a identificar o tema no painel administrativo do WordPress. 
